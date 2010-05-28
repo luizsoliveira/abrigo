@@ -1,0 +1,59 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Voluntario
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          voluntario
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields: 
+        nome: {attributes: { size:  50 }}
+        endLogradouro: {label: Logradouro, attributes: { size:  50 }}
+        endNumero: {label: Numero, attributes: { size:  50 }}
+        endBairro: {label: Bairro, attributes: { size:  50 }}
+        endCidade: {label: Cidade, attributes: { size:  50 }}
+        endEstado: {label: Estado}
+        endCep: {label: CEP, attributes: {maxlength: 9}}
+        endProfLogradouro: {label: Logradouro, attributes: { size:  50 }}
+        endProfNumero: {label: Numero, attributes: { size:  50 }}
+        endProfBairro: {label: Bairro, attributes: { size:  50 }}
+        endProfCidade: {label: Cidade, attributes: { size:  50 }}
+        endProfEstado: {label: Estado}
+        endProfCep: {label: CEP, attributes: {maxlength: 9}}
+        contatos: {attributes: {cols: 50}}
+        dataNascimento: {label: Data de nascimento}
+        observacao: {label: Observação, attributes: {rows: 10, cols: 50}}
+        profissao: {label: Profissão, attributes: { size:  50 }}
+        composicaoFamiliar: {label: Composição familiar, attributes: {rows: 10, cols: 50}}
+        preferenciaReligiosa: {label: Preferência Religiosa, attributes: {rows: 10, cols: 50}}
+        conhecimentoPrograma: {label: Conhecimento do programa, attributes: {rows: 10, cols: 50}}
+        disponibilidadeHorario: {label: Disponibilidade de horário, attributes: {rows: 10, cols: 50}}
+        atividadeDesenvolvida: {label: Atividade desenvolvida, attributes: {rows: 10, cols: 50}}
+        dataInscricao: {label: Data de inscrição}
+        tecnicoResponsavel: {label: Técnico responsável}
+      list: 
+        title: Voluntários
+        display: [=nome, profissao, endCidade, endEstado]  
+      filter: 
+        display: [nome, profissao, endCidade, endEstado] 
+      form:
+        display:   
+           Geral: [nome, dataNascimento, sexo] 
+           Endereço Residencial: [endLogradouro, endNumero, endBairro, endCidade, endEstado, endCep]
+           Endereço Profissional: [endProfLogradouro, endProfNumero, endProfBairro, endProfCidade, endProfEstado, endCep]
+           Perfil: [escolaridade_id, profissao, composicaoFamiliar, preferenciaReligiosa, conhecimentoPrograma, disponibilidadeHorario, atividadeDesenvolvida]
+           Outros: [contatos, dataInscricao, tecnicoResponsavel]
+           
+      edit:
+        title: Editando o voluntário: %%nome%%
+      new:
+        title: Novo Voluntário
+        fields:
+         

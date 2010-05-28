@@ -1,0 +1,14 @@
+# data/fixtures/grauParentescoResponsavel.yml
+GrauParentescoResponsavel:
+    1:
+        nome: avô / avó
+    2:
+        nome: tio / tia
+    3:
+        nome: irmão / irmã
+    4:
+        nome: primo / prima
+    5:
+        nome: nenhum
+    6:
+        nome: outros

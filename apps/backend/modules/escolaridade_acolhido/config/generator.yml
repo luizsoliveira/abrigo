@@ -1,0 +1,38 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           EscolaridadeAcolhido
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          escolaridade_acolhido
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields: 
+        nomeEscola: {label: Nome da escola, attributes: { size:  50 }}
+        dataConclusao: {label: Data de conclusão}
+        acolhidoNome: {label: Acolhido}
+        escolaridadeNome: {label: Escolaridade}
+
+        
+        
+      list: 
+        title: Escolaridades registradas
+        display: [=acolhidoNome, escolaridadeNome]  
+      filter: 
+        display: [acolhido_id, escolaridade_id, nomeEscola, dataConclusao] 
+      form: ~
+      edit:
+        title: Editando a escolaridade %%escolaridadeNome%% do acolhido: %%acolhidoNome%%
+        fields:
+          
+      new:
+        title: Novo curso externo
+        fields:
+         
+      

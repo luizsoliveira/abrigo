@@ -1,0 +1,16 @@
+# data/fixtures/motivoDesligamento.yml
+MotivoDesligamento:
+    1:
+        nome: reintegração familiar
+    2:
+        nome: evasão
+    3:
+        nome: colocação em família substituta
+    4:
+        nome: alcançou a maioridade
+    5:
+        nome: óbito
+    6:
+        nome: não informado
+    7:
+        nome: outros

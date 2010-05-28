@@ -1,0 +1,45 @@
+Alterações no Framework
+
+range default do ano no widget date
+formato default do ano no widget date
+
+symfony plugin:install ahDoctrineEasyEmbeddedRelationsPlugin
+
+
+Activate the plugin in config/ProjectConfiguration.class.php
+
+class ProjectConfiguration extends sfProjectConfiguration
+{
+  public function setup()
+  {
+    $this->enablePlugins(array(
+      'sfDoctrinePlugin',
+      'ahDoctrineEasyEmbeddedRelationsPlugin',
+      '...'
+    ));
+  }
+}
+
+#
+
+Change the parent class in lib/form/doctrine/BaseFormDoctrine.class.php to ahBaseFormDoctrine
+
+abstract class BaseFormDoctrine extends ahBaseFormDoctrine
+{
+  ...
+}
+
+./symfony plugin:publish-assets
+
+./symfony cc
+
+
+sfWidgetFormDateRange (tradução from=> de, e to=> até)
+
+<?php $sf_user->setCulture('pt_BR') ?> no layout.php do backend
+
+
+Traduzir mensagens do arquivo sfModelGeneratorConfiguration, colocando o _() nas palavras.
+
+sfWidgetFormFilterDate, sfWidgetFormFilterInput: is empty => vazio
+

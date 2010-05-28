@@ -1,0 +1,74 @@
+# data/fixtures/pessoas.yml
+Responsavel:
+    1:
+      nome: Fernanda Ricardo da Silva
+      sexo: Feminino
+      autorizacaoVisita: Sim
+      endCidade: Três Rios
+      endEstado: RJ
+    2:
+      nome: Luiz Antônio Dias de Oliveira
+      sexo: Masculino
+      autorizacaoVisita: Não
+      endCidade: Três Rios
+      endEstado: RJ
+    3:
+      nome: Hosana Vieira da Silva
+      sexo: Feminino
+      autorizacaoVisita: Sim
+      endCidade: Três Rios
+      endEstado: RJ
+
+Voluntario:
+    1:
+      nome: Luiz Felipe Silva Oliveira
+      endCidade: Três Rios
+      endEstado: RJ
+
+Padrinho:
+    1:
+      nome: Jorge Macedo Ideal
+      endCidade: Três Rios
+      endEstado: RJ
+
+Acolhido:
+    1:
+      nome: João Carlos
+      sexo: Masculino
+      dataNascimento: '1987-11-12 00:00:00'
+      motivoIngresso_id: 1
+      pai_id: 1
+      mae_id: 1
+      responsavel_id: 1
+
+    2:
+      nome: Miguel Castro
+      sexo: Masculino
+      dataNascimento: '1987-11-22 00:00:00'
+      possuiDeficiencia: Sim
+      motivoIngresso_id: 2
+      pai_id: 1
+      mae_id: 1
+
+    3:
+      nome: Isabela Miranda
+      sexo: Feminino
+      motivoIngresso_id: 2
+      pai_id: 1
+      mae_id: 1
+
+    4:
+      nome: Beatriz de Albuquerque
+      sexo: Feminino
+      motivoIngresso_id: 1
+      usoMedicamentoControlado: Sim
+      motivoDesligamento_id: 2
+      dataDesligamento: '2010-05-22'
+      pai_id: 1
+      mae_id: 1
+
+
+
+      
+      
+

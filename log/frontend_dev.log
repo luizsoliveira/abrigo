@@ -1,0 +1,535 @@
+Apr 22 10:31:24 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Apr 22 10:31:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 22 10:31:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 22 10:31:24 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+Apr 22 10:31:24 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/lib/vendor/symfony/lib/controller/default/templates/indexSuccess.php"
+Apr 22 10:31:24 symfony [info] {sfPHPView} Decorate content with "/home/07764280631/sfprojects/abrigo/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Apr 22 10:31:24 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Apr 22 10:31:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 22 10:31:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 22 10:31:24 symfony [info] {sfWebDebugLogger} Configuration 104.64 ms (9)
+Apr 22 10:31:24 symfony [info] {sfWebDebugLogger} Factories 65.24 ms (1)
+Apr 22 10:31:24 symfony [info] {sfWebDebugLogger} Action "default/index" 0.09 ms (1)
+Apr 22 10:31:24 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 13.03 ms (1)
+Apr 22 10:31:24 symfony [info] {sfWebResponse} Send content (28957 o)
+Apr 22 16:42:59 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+Apr 22 16:42:59 symfony [info] {sfFrontWebController} Action "job/index" does not exist
+Apr 22 16:42:59 symfony [err] {sfError404Exception} Action "job/index" does not exist.
+Apr 22 16:42:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 22 16:42:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 22 16:42:59 symfony [info] {sfWebDebugLogger} Configuration 0.53 ms (5)
+Apr 22 16:42:59 symfony [info] {sfWebDebugLogger} Factories 20.46 ms (1)
+Apr 22 16:43:08 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /acolhido with parameters array (  'module' => 'acolhido',  'action' => 'index',)
+Apr 22 16:43:08 symfony [info] {sfFrontWebController} Action "acolhido/index" does not exist
+Apr 22 16:43:08 symfony [err] {sfError404Exception} Action "acolhido/index" does not exist.
+Apr 22 16:43:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 22 16:43:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 22 16:43:08 symfony [info] {sfWebDebugLogger} Configuration 0.45 ms (5)
+Apr 22 16:43:08 symfony [info] {sfWebDebugLogger} Factories 18.21 ms (1)
+Apr 22 16:46:04 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /padrinho with parameters array (  'module' => 'padrinho',  'action' => 'index',)
+Apr 22 16:46:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 22 16:46:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 22 16:46:04 symfony [info] {padrinhoActions} Call "padrinhoActions->executeIndex()"
+Apr 22 16:46:04 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 22 16:46:04 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.nome AS p__nome, p.sexo AS p__sexo, p.datanascimento AS p__datanascimento, p.end_logradouro AS p__end_logradouro, p.end_numero AS p__end_numero, p.end_complemento AS p__end_complemento, p.end_bairro AS p__end_bairro, p.end_cidade AS p__end_cidade, p.endprof_logradouro AS p__endprof_logradouro, p.endprofp_numero AS p__endprofp_numero, p.endprof_complemento AS p__endprof_complemento, p.endprof_bairro AS p__endprof_bairro, p.endprof_cidade AS p__endprof_cidade, p.contatos AS p__contatos, p.escolaridade_id AS p__escolaridade_id, p.profissao AS p__profissao, p.composicaofamiliar AS p__composicaofamiliar, p.preferenciareligiosa AS p__preferenciareligiosa, p.conhecimentoprograma AS p__conhecimentoprograma, p.interessepreliminar AS p__interessepreliminar, p.observacao AS p__observacao, p.datainscricao AS p__datainscricao, p.tecnicoresposavel AS p__tecnicoresposavel, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM padrinho p - ()
+Apr 22 16:46:04 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/modules/padrinho/templates/indexSuccess.php"
+Apr 22 16:46:04 symfony [info] {sfPHPView} Decorate content with "/home/07764280631/sfprojects/abrigo/apps/frontend/templates/layout.php"
+Apr 22 16:46:04 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/templates/layout.php"
+Apr 22 16:46:04 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 22 16:46:04 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 22 16:46:04 symfony [info] {sfWebDebugLogger} Configuration 12.90 ms (10)
+Apr 22 16:46:04 symfony [info] {sfWebDebugLogger} Factories 19.49 ms (1)
+Apr 22 16:46:04 symfony [info] {sfWebDebugLogger} Action "padrinho/index" 42.70 ms (1)
+Apr 22 16:46:04 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Apr 22 16:46:04 symfony [info] {sfWebDebugLogger} View "Success" for "padrinho/index" 14.77 ms (1)
+Apr 22 16:46:04 symfony [info] {sfWebResponse} Send content (34563 o)
+Apr 22 16:46:15 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /padrinho/new with parameters array (  'module' => 'padrinho',  'action' => 'new',)
+Apr 22 16:46:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 22 16:46:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 22 16:46:15 symfony [info] {padrinhoActions} Call "padrinhoActions->executeNew()"
+Apr 22 16:46:16 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/modules/padrinho/templates/newSuccess.php"
+Apr 22 16:46:16 symfony [info] {sfPartialView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/modules/padrinho/templates/_form.php"
+Apr 22 16:46:16 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 22 16:46:16 symfony [info] {Doctrine_Connection_Mysql} query : SELECT n.id AS n__id, n.nome AS n__nome, n.grau AS n__grau, n.ordem AS n__ordem, n.created_at AS n__created_at, n.updated_at AS n__updated_at FROM nivel_escolaridade n - ()
+Apr 22 16:46:16 symfony [info] {sfPHPView} Decorate content with "/home/07764280631/sfprojects/abrigo/apps/frontend/templates/layout.php"
+Apr 22 16:46:16 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/templates/layout.php"
+Apr 22 16:46:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 22 16:46:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 22 16:46:16 symfony [info] {sfWebDebugLogger} Configuration 0.86 ms (9)
+Apr 22 16:46:16 symfony [info] {sfWebDebugLogger} Factories 19.30 ms (1)
+Apr 22 16:46:16 symfony [info] {sfWebDebugLogger} Action "padrinho/new" 33.74 ms (1)
+Apr 22 16:46:16 symfony [info] {sfWebDebugLogger} View "Success" for "padrinho/new" 88.52 ms (1)
+Apr 22 16:46:16 symfony [info] {sfWebDebugLogger} Partial "padrinho/_form" 76.64 ms (1)
+Apr 22 16:46:16 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Apr 22 16:46:16 symfony [info] {sfWebResponse} Send content (62633 o)
+Apr 22 16:46:43 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /padrinho with parameters array (  'module' => 'padrinho',  'action' => 'index',)
+Apr 22 16:46:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 22 16:46:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 22 16:46:43 symfony [info] {padrinhoActions} Call "padrinhoActions->executeIndex()"
+Apr 22 16:46:43 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 22 16:46:43 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.nome AS p__nome, p.sexo AS p__sexo, p.datanascimento AS p__datanascimento, p.end_logradouro AS p__end_logradouro, p.end_numero AS p__end_numero, p.end_complemento AS p__end_complemento, p.end_bairro AS p__end_bairro, p.end_cidade AS p__end_cidade, p.endprof_logradouro AS p__endprof_logradouro, p.endprofp_numero AS p__endprofp_numero, p.endprof_complemento AS p__endprof_complemento, p.endprof_bairro AS p__endprof_bairro, p.endprof_cidade AS p__endprof_cidade, p.contatos AS p__contatos, p.escolaridade_id AS p__escolaridade_id, p.profissao AS p__profissao, p.composicaofamiliar AS p__composicaofamiliar, p.preferenciareligiosa AS p__preferenciareligiosa, p.conhecimentoprograma AS p__conhecimentoprograma, p.interessepreliminar AS p__interessepreliminar, p.observacao AS p__observacao, p.datainscricao AS p__datainscricao, p.tecnicoresposavel AS p__tecnicoresposavel, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM padrinho p - ()
+Apr 22 16:46:43 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/modules/padrinho/templates/indexSuccess.php"
+Apr 22 16:46:43 symfony [info] {sfPHPView} Decorate content with "/home/07764280631/sfprojects/abrigo/apps/frontend/templates/layout.php"
+Apr 22 16:46:43 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/templates/layout.php"
+Apr 22 16:46:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 22 16:46:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 22 16:46:43 symfony [info] {sfWebDebugLogger} Configuration 0.85 ms (9)
+Apr 22 16:46:43 symfony [info] {sfWebDebugLogger} Factories 19.10 ms (1)
+Apr 22 16:46:43 symfony [info] {sfWebDebugLogger} Action "padrinho/index" 36.52 ms (1)
+Apr 22 16:46:43 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Apr 22 16:46:43 symfony [info] {sfWebDebugLogger} View "Success" for "padrinho/index" 7.75 ms (1)
+Apr 22 16:46:43 symfony [info] {sfWebResponse} Send content (34637 o)
+Apr 22 16:46:47 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /padrinho/new with parameters array (  'module' => 'padrinho',  'action' => 'new',)
+Apr 22 16:46:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 22 16:46:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 22 16:46:47 symfony [info] {padrinhoActions} Call "padrinhoActions->executeNew()"
+Apr 22 16:46:47 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/modules/padrinho/templates/newSuccess.php"
+Apr 22 16:46:47 symfony [info] {sfPartialView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/modules/padrinho/templates/_form.php"
+Apr 22 16:46:47 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 22 16:46:47 symfony [info] {Doctrine_Connection_Mysql} query : SELECT n.id AS n__id, n.nome AS n__nome, n.grau AS n__grau, n.ordem AS n__ordem, n.created_at AS n__created_at, n.updated_at AS n__updated_at FROM nivel_escolaridade n - ()
+Apr 22 16:46:47 symfony [info] {sfPHPView} Decorate content with "/home/07764280631/sfprojects/abrigo/apps/frontend/templates/layout.php"
+Apr 22 16:46:47 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/templates/layout.php"
+Apr 22 16:46:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 22 16:46:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 22 16:46:47 symfony [info] {sfWebDebugLogger} Configuration 0.88 ms (9)
+Apr 22 16:46:47 symfony [info] {sfWebDebugLogger} Factories 18.88 ms (1)
+Apr 22 16:46:47 symfony [info] {sfWebDebugLogger} Action "padrinho/new" 33.74 ms (1)
+Apr 22 16:46:47 symfony [info] {sfWebDebugLogger} View "Success" for "padrinho/new" 67.45 ms (1)
+Apr 22 16:46:47 symfony [info] {sfWebDebugLogger} Partial "padrinho/_form" 59.89 ms (1)
+Apr 22 16:46:47 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Apr 22 16:46:47 symfony [info] {sfWebResponse} Send content (62633 o)
+Apr 22 16:49:55 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /padrinho/create with parameters array (  'module' => 'padrinho',  'action' => 'create',)
+Apr 22 16:49:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 22 16:49:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 22 16:49:55 symfony [info] {padrinhoActions} Call "padrinhoActions->executeCreate()"
+Apr 22 16:49:55 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 22 16:49:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM nivel_escolaridade n WHERE n.id = ? - (10)
+Apr 22 16:49:55 symfony [info] {padrinhoActions} Change template to "CURRENT/new"
+Apr 22 16:49:55 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/modules/padrinho/templates/newSuccess.php"
+Apr 22 16:49:55 symfony [info] {sfPartialView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/modules/padrinho/templates/_form.php"
+Apr 22 16:49:55 symfony [info] {Doctrine_Connection_Mysql} query : SELECT n.id AS n__id, n.nome AS n__nome, n.grau AS n__grau, n.ordem AS n__ordem, n.created_at AS n__created_at, n.updated_at AS n__updated_at FROM nivel_escolaridade n - ()
+Apr 22 16:49:55 symfony [info] {sfPHPView} Decorate content with "/home/07764280631/sfprojects/abrigo/apps/frontend/templates/layout.php"
+Apr 22 16:49:55 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/templates/layout.php"
+Apr 22 16:49:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 22 16:49:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 22 16:49:55 symfony [info] {sfWebDebugLogger} Configuration 0.86 ms (9)
+Apr 22 16:49:55 symfony [info] {sfWebDebugLogger} Factories 18.21 ms (1)
+Apr 22 16:49:55 symfony [info] {sfWebDebugLogger} Action "padrinho/create" 59.09 ms (1)
+Apr 22 16:49:55 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Apr 22 16:49:55 symfony [info] {sfWebDebugLogger} View "Success" for "padrinho/create" 57.48 ms (1)
+Apr 22 16:49:55 symfony [info] {sfWebDebugLogger} Partial "padrinho/_form" 49.80 ms (1)
+Apr 22 16:49:55 symfony [info] {sfWebResponse} Send content (67788 o)
+Apr 22 16:50:32 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /padrinho/create with parameters array (  'module' => 'padrinho',  'action' => 'create',)
+Apr 22 16:50:32 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 22 16:50:32 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 22 16:50:32 symfony [info] {padrinhoActions} Call "padrinhoActions->executeCreate()"
+Apr 22 16:50:32 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 22 16:50:32 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM nivel_escolaridade n WHERE n.id = ? - (10)
+Apr 22 16:50:32 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO padrinho (nome, sexo, datanascimento, end_logradouro, end_numero, end_complemento, end_bairro, end_cidade, endprof_logradouro, endprofp_numero, endprof_complemento, endprof_bairro, endprof_cidade, contatos, escolaridade_id, profissao, composicaofamiliar, preferenciareligiosa, conhecimentoprograma, interessepreliminar, observacao, datainscricao, tecnicoresposavel, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) - (Luiz Oliveira, 1, 2005-12-11, Fagundes Varela, 252, CASA, Ingá, Niterói, Pacheco Leão, 1235, FUNDOS HORTO FLORESTAL, Jardim Botânico, Rio de Janeiro, 24 2252 6060
+21 2717 5465
+luiz@luizfelipe.com.br, 10, Analista de Sistemas, sem filhos, Protestante / Metodista, amigos, Fulano e Ciclana, , 2005-08-15, Luiz, 2010-10-10 08:01:00, 2010-10-10 08:01:00)
+Apr 22 16:50:32 symfony [info] {sfFrontWebController} Redirect to "http://localhost:8580/frontend_dev.php/padrinho/edit/id/1"
+Apr 22 16:50:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Apr 22 16:50:32 symfony [info] {sfWebResponse} Send header "Location: http://localhost:8580/frontend_dev.php/padrinho/edit/id/1"
+Apr 22 16:50:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 22 16:50:32 symfony [info] {sfWebDebugLogger} Configuration 0.74 ms (8)
+Apr 22 16:50:32 symfony [info] {sfWebDebugLogger} Factories 19.69 ms (1)
+Apr 22 16:50:32 symfony [info] {sfWebDebugLogger} Action "padrinho/create" 67.96 ms (1)
+Apr 22 16:50:32 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Apr 22 16:50:32 symfony [info] {sfWebResponse} Send content (128 o)
+Apr 22 16:50:32 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /padrinho/edit/id/1 with parameters array (  'module' => 'padrinho',  'action' => 'edit',  'id' => '1',)
+Apr 22 16:50:32 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 22 16:50:32 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 22 16:50:32 symfony [info] {padrinhoActions} Call "padrinhoActions->executeEdit()"
+Apr 22 16:50:32 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 22 16:50:32 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.nome AS p__nome, p.sexo AS p__sexo, p.datanascimento AS p__datanascimento, p.end_logradouro AS p__end_logradouro, p.end_numero AS p__end_numero, p.end_complemento AS p__end_complemento, p.end_bairro AS p__end_bairro, p.end_cidade AS p__end_cidade, p.endprof_logradouro AS p__endprof_logradouro, p.endprofp_numero AS p__endprofp_numero, p.endprof_complemento AS p__endprof_complemento, p.endprof_bairro AS p__endprof_bairro, p.endprof_cidade AS p__endprof_cidade, p.contatos AS p__contatos, p.escolaridade_id AS p__escolaridade_id, p.profissao AS p__profissao, p.composicaofamiliar AS p__composicaofamiliar, p.preferenciareligiosa AS p__preferenciareligiosa, p.conhecimentoprograma AS p__conhecimentoprograma, p.interessepreliminar AS p__interessepreliminar, p.observacao AS p__observacao, p.datainscricao AS p__datainscricao, p.tecnicoresposavel AS p__tecnicoresposavel, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM padrinho p WHERE (p.id = ?) LIMIT 1 - (1)
+Apr 22 16:50:32 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/modules/padrinho/templates/editSuccess.php"
+Apr 22 16:50:32 symfony [info] {sfPartialView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/modules/padrinho/templates/_form.php"
+Apr 22 16:50:32 symfony [info] {Doctrine_Connection_Mysql} query : SELECT n.id AS n__id, n.nome AS n__nome, n.grau AS n__grau, n.ordem AS n__ordem, n.created_at AS n__created_at, n.updated_at AS n__updated_at FROM nivel_escolaridade n - ()
+Apr 22 16:50:32 symfony [info] {sfPHPView} Decorate content with "/home/07764280631/sfprojects/abrigo/apps/frontend/templates/layout.php"
+Apr 22 16:50:32 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/templates/layout.php"
+Apr 22 16:50:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 22 16:50:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 22 16:50:32 symfony [info] {sfWebDebugLogger} Configuration 0.85 ms (9)
+Apr 22 16:50:32 symfony [info] {sfWebDebugLogger} Factories 18.15 ms (1)
+Apr 22 16:50:32 symfony [info] {sfWebDebugLogger} Action "padrinho/edit" 52.02 ms (1)
+Apr 22 16:50:32 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Apr 22 16:50:32 symfony [info] {sfWebDebugLogger} View "Success" for "padrinho/edit" 55.20 ms (1)
+Apr 22 16:50:32 symfony [info] {sfWebDebugLogger} Partial "padrinho/_form" 47.31 ms (1)
+Apr 22 16:50:32 symfony [info] {sfWebResponse} Send content (68877 o)
+Apr 22 16:50:38 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /padrinho with parameters array (  'module' => 'padrinho',  'action' => 'index',)
+Apr 22 16:50:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 22 16:50:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 22 16:50:38 symfony [info] {padrinhoActions} Call "padrinhoActions->executeIndex()"
+Apr 22 16:50:38 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 22 16:50:38 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.nome AS p__nome, p.sexo AS p__sexo, p.datanascimento AS p__datanascimento, p.end_logradouro AS p__end_logradouro, p.end_numero AS p__end_numero, p.end_complemento AS p__end_complemento, p.end_bairro AS p__end_bairro, p.end_cidade AS p__end_cidade, p.endprof_logradouro AS p__endprof_logradouro, p.endprofp_numero AS p__endprofp_numero, p.endprof_complemento AS p__endprof_complemento, p.endprof_bairro AS p__endprof_bairro, p.endprof_cidade AS p__endprof_cidade, p.contatos AS p__contatos, p.escolaridade_id AS p__escolaridade_id, p.profissao AS p__profissao, p.composicaofamiliar AS p__composicaofamiliar, p.preferenciareligiosa AS p__preferenciareligiosa, p.conhecimentoprograma AS p__conhecimentoprograma, p.interessepreliminar AS p__interessepreliminar, p.observacao AS p__observacao, p.datainscricao AS p__datainscricao, p.tecnicoresposavel AS p__tecnicoresposavel, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM padrinho p - ()
+Apr 22 16:50:38 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/modules/padrinho/templates/indexSuccess.php"
+Apr 22 16:50:38 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "end_prof_logradouro" on "Padrinho"
+Apr 22 16:50:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Apr 22 16:50:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 22 16:50:38 symfony [info] {sfWebDebugLogger} Configuration 0.93 ms (9)
+Apr 22 16:50:38 symfony [info] {sfWebDebugLogger} Factories 17.90 ms (1)
+Apr 22 16:50:38 symfony [info] {sfWebDebugLogger} Action "padrinho/index" 32.39 ms (1)
+Apr 22 16:50:38 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Apr 22 16:50:38 symfony [info] {sfWebDebugLogger} View "Success" for "padrinho/index" 55.23 ms (1)
+Apr 22 16:50:55 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /padrinho with parameters array (  'module' => 'padrinho',  'action' => 'index',)
+Apr 22 16:50:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 22 16:50:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 22 16:50:55 symfony [info] {padrinhoActions} Call "padrinhoActions->executeIndex()"
+Apr 22 16:50:55 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 22 16:50:55 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.nome AS p__nome, p.sexo AS p__sexo, p.datanascimento AS p__datanascimento, p.end_logradouro AS p__end_logradouro, p.end_numero AS p__end_numero, p.end_complemento AS p__end_complemento, p.end_bairro AS p__end_bairro, p.end_cidade AS p__end_cidade, p.endprof_logradouro AS p__endprof_logradouro, p.endprofp_numero AS p__endprofp_numero, p.endprof_complemento AS p__endprof_complemento, p.endprof_bairro AS p__endprof_bairro, p.endprof_cidade AS p__endprof_cidade, p.contatos AS p__contatos, p.escolaridade_id AS p__escolaridade_id, p.profissao AS p__profissao, p.composicaofamiliar AS p__composicaofamiliar, p.preferenciareligiosa AS p__preferenciareligiosa, p.conhecimentoprograma AS p__conhecimentoprograma, p.interessepreliminar AS p__interessepreliminar, p.observacao AS p__observacao, p.datainscricao AS p__datainscricao, p.tecnicoresposavel AS p__tecnicoresposavel, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM padrinho p - ()
+Apr 22 16:50:55 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/modules/padrinho/templates/indexSuccess.php"
+Apr 22 16:50:55 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "end_prof_logradouro" on "Padrinho"
+Apr 22 16:50:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Apr 22 16:50:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 22 16:50:55 symfony [info] {sfWebDebugLogger} Configuration 0.94 ms (9)
+Apr 22 16:50:55 symfony [info] {sfWebDebugLogger} Factories 19.82 ms (1)
+Apr 22 16:50:55 symfony [info] {sfWebDebugLogger} Action "padrinho/index" 34.70 ms (1)
+Apr 22 16:50:55 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Apr 22 16:50:55 symfony [info] {sfWebDebugLogger} View "Success" for "padrinho/index" 56.18 ms (1)
+Apr 22 16:50:58 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /padrinho with parameters array (  'module' => 'padrinho',  'action' => 'index',)
+Apr 22 16:50:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 22 16:50:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 22 16:50:58 symfony [info] {padrinhoActions} Call "padrinhoActions->executeIndex()"
+Apr 22 16:50:58 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 22 16:50:58 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.nome AS p__nome, p.sexo AS p__sexo, p.datanascimento AS p__datanascimento, p.end_logradouro AS p__end_logradouro, p.end_numero AS p__end_numero, p.end_complemento AS p__end_complemento, p.end_bairro AS p__end_bairro, p.end_cidade AS p__end_cidade, p.endprof_logradouro AS p__endprof_logradouro, p.endprofp_numero AS p__endprofp_numero, p.endprof_complemento AS p__endprof_complemento, p.endprof_bairro AS p__endprof_bairro, p.endprof_cidade AS p__endprof_cidade, p.contatos AS p__contatos, p.escolaridade_id AS p__escolaridade_id, p.profissao AS p__profissao, p.composicaofamiliar AS p__composicaofamiliar, p.preferenciareligiosa AS p__preferenciareligiosa, p.conhecimentoprograma AS p__conhecimentoprograma, p.interessepreliminar AS p__interessepreliminar, p.observacao AS p__observacao, p.datainscricao AS p__datainscricao, p.tecnicoresposavel AS p__tecnicoresposavel, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM padrinho p - ()
+Apr 22 16:50:58 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/modules/padrinho/templates/indexSuccess.php"
+Apr 22 16:50:58 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "end_prof_logradouro" on "Padrinho"
+Apr 22 16:50:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Apr 22 16:50:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 22 16:50:58 symfony [info] {sfWebDebugLogger} Configuration 0.88 ms (9)
+Apr 22 16:50:58 symfony [info] {sfWebDebugLogger} Factories 19.41 ms (1)
+Apr 22 16:50:58 symfony [info] {sfWebDebugLogger} Action "padrinho/index" 34.87 ms (1)
+Apr 22 16:50:58 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Apr 22 16:50:58 symfony [info] {sfWebDebugLogger} View "Success" for "padrinho/index" 56.03 ms (1)
+Apr 22 16:51:04 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /padrinho/update/id/1 with parameters array (  'module' => 'padrinho',  'action' => 'update',  'id' => '1',)
+Apr 22 16:51:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 22 16:51:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 22 16:51:04 symfony [info] {padrinhoActions} Call "padrinhoActions->executeUpdate()"
+Apr 22 16:51:04 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 22 16:51:04 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.nome AS p__nome, p.sexo AS p__sexo, p.datanascimento AS p__datanascimento, p.end_logradouro AS p__end_logradouro, p.end_numero AS p__end_numero, p.end_complemento AS p__end_complemento, p.end_bairro AS p__end_bairro, p.end_cidade AS p__end_cidade, p.endprof_logradouro AS p__endprof_logradouro, p.endprofp_numero AS p__endprofp_numero, p.endprof_complemento AS p__endprof_complemento, p.endprof_bairro AS p__endprof_bairro, p.endprof_cidade AS p__endprof_cidade, p.contatos AS p__contatos, p.escolaridade_id AS p__escolaridade_id, p.profissao AS p__profissao, p.composicaofamiliar AS p__composicaofamiliar, p.preferenciareligiosa AS p__preferenciareligiosa, p.conhecimentoprograma AS p__conhecimentoprograma, p.interessepreliminar AS p__interessepreliminar, p.observacao AS p__observacao, p.datainscricao AS p__datainscricao, p.tecnicoresposavel AS p__tecnicoresposavel, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM padrinho p WHERE (p.id = ?) LIMIT 1 - (1)
+Apr 22 16:51:04 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM nivel_escolaridade n WHERE n.id = ? - (10)
+Apr 22 16:51:04 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM padrinho p WHERE p.id = ? - (1)
+Apr 22 16:51:04 symfony [info] {sfFrontWebController} Redirect to "http://localhost:8580/frontend_dev.php/padrinho/edit/id/1"
+Apr 22 16:51:04 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Apr 22 16:51:04 symfony [info] {sfWebResponse} Send header "Location: http://localhost:8580/frontend_dev.php/padrinho/edit/id/1"
+Apr 22 16:51:04 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 22 16:51:04 symfony [info] {sfWebDebugLogger} Configuration 0.74 ms (8)
+Apr 22 16:51:04 symfony [info] {sfWebDebugLogger} Factories 19.45 ms (1)
+Apr 22 16:51:04 symfony [info] {sfWebDebugLogger} Action "padrinho/update" 67.35 ms (1)
+Apr 22 16:51:04 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (4)
+Apr 22 16:51:04 symfony [info] {sfWebResponse} Send content (128 o)
+Apr 22 16:51:04 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /padrinho/edit/id/1 with parameters array (  'module' => 'padrinho',  'action' => 'edit',  'id' => '1',)
+Apr 22 16:51:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 22 16:51:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 22 16:51:04 symfony [info] {padrinhoActions} Call "padrinhoActions->executeEdit()"
+Apr 22 16:51:04 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 22 16:51:04 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.nome AS p__nome, p.sexo AS p__sexo, p.datanascimento AS p__datanascimento, p.end_logradouro AS p__end_logradouro, p.end_numero AS p__end_numero, p.end_complemento AS p__end_complemento, p.end_bairro AS p__end_bairro, p.end_cidade AS p__end_cidade, p.endprof_logradouro AS p__endprof_logradouro, p.endprofp_numero AS p__endprofp_numero, p.endprof_complemento AS p__endprof_complemento, p.endprof_bairro AS p__endprof_bairro, p.endprof_cidade AS p__endprof_cidade, p.contatos AS p__contatos, p.escolaridade_id AS p__escolaridade_id, p.profissao AS p__profissao, p.composicaofamiliar AS p__composicaofamiliar, p.preferenciareligiosa AS p__preferenciareligiosa, p.conhecimentoprograma AS p__conhecimentoprograma, p.interessepreliminar AS p__interessepreliminar, p.observacao AS p__observacao, p.datainscricao AS p__datainscricao, p.tecnicoresposavel AS p__tecnicoresposavel, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM padrinho p WHERE (p.id = ?) LIMIT 1 - (1)
+Apr 22 16:51:05 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/modules/padrinho/templates/editSuccess.php"
+Apr 22 16:51:05 symfony [info] {sfPartialView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/modules/padrinho/templates/_form.php"
+Apr 22 16:51:05 symfony [info] {Doctrine_Connection_Mysql} query : SELECT n.id AS n__id, n.nome AS n__nome, n.grau AS n__grau, n.ordem AS n__ordem, n.created_at AS n__created_at, n.updated_at AS n__updated_at FROM nivel_escolaridade n - ()
+Apr 22 16:51:05 symfony [info] {sfPHPView} Decorate content with "/home/07764280631/sfprojects/abrigo/apps/frontend/templates/layout.php"
+Apr 22 16:51:05 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/templates/layout.php"
+Apr 22 16:51:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 22 16:51:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 22 16:51:05 symfony [info] {sfWebDebugLogger} Configuration 0.84 ms (9)
+Apr 22 16:51:05 symfony [info] {sfWebDebugLogger} Factories 18.93 ms (1)
+Apr 22 16:51:05 symfony [info] {sfWebDebugLogger} Action "padrinho/edit" 54.33 ms (1)
+Apr 22 16:51:05 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Apr 22 16:51:05 symfony [info] {sfWebDebugLogger} View "Success" for "padrinho/edit" 54.95 ms (1)
+Apr 22 16:51:05 symfony [info] {sfWebDebugLogger} Partial "padrinho/_form" 47.33 ms (1)
+Apr 22 16:51:05 symfony [info] {sfWebResponse} Send content (68880 o)
+Apr 22 16:51:07 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /padrinho with parameters array (  'module' => 'padrinho',  'action' => 'index',)
+Apr 22 16:51:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 22 16:51:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 22 16:51:07 symfony [info] {padrinhoActions} Call "padrinhoActions->executeIndex()"
+Apr 22 16:51:07 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 22 16:51:07 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.nome AS p__nome, p.sexo AS p__sexo, p.datanascimento AS p__datanascimento, p.end_logradouro AS p__end_logradouro, p.end_numero AS p__end_numero, p.end_complemento AS p__end_complemento, p.end_bairro AS p__end_bairro, p.end_cidade AS p__end_cidade, p.endprof_logradouro AS p__endprof_logradouro, p.endprofp_numero AS p__endprofp_numero, p.endprof_complemento AS p__endprof_complemento, p.endprof_bairro AS p__endprof_bairro, p.endprof_cidade AS p__endprof_cidade, p.contatos AS p__contatos, p.escolaridade_id AS p__escolaridade_id, p.profissao AS p__profissao, p.composicaofamiliar AS p__composicaofamiliar, p.preferenciareligiosa AS p__preferenciareligiosa, p.conhecimentoprograma AS p__conhecimentoprograma, p.interessepreliminar AS p__interessepreliminar, p.observacao AS p__observacao, p.datainscricao AS p__datainscricao, p.tecnicoresposavel AS p__tecnicoresposavel, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM padrinho p - ()
+Apr 22 16:51:07 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/modules/padrinho/templates/indexSuccess.php"
+Apr 22 16:51:07 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "end_prof_logradouro" on "Padrinho"
+Apr 22 16:51:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Apr 22 16:51:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 22 16:51:07 symfony [info] {sfWebDebugLogger} Configuration 0.84 ms (9)
+Apr 22 16:51:07 symfony [info] {sfWebDebugLogger} Factories 19.28 ms (1)
+Apr 22 16:51:07 symfony [info] {sfWebDebugLogger} Action "padrinho/index" 34.49 ms (1)
+Apr 22 16:51:07 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Apr 22 16:51:07 symfony [info] {sfWebDebugLogger} View "Success" for "padrinho/index" 56.06 ms (1)
+Apr 22 16:51:09 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /padrinho with parameters array (  'module' => 'padrinho',  'action' => 'index',)
+Apr 22 16:51:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 22 16:51:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 22 16:51:09 symfony [info] {padrinhoActions} Call "padrinhoActions->executeIndex()"
+Apr 22 16:51:09 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 22 16:51:09 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.nome AS p__nome, p.sexo AS p__sexo, p.datanascimento AS p__datanascimento, p.end_logradouro AS p__end_logradouro, p.end_numero AS p__end_numero, p.end_complemento AS p__end_complemento, p.end_bairro AS p__end_bairro, p.end_cidade AS p__end_cidade, p.endprof_logradouro AS p__endprof_logradouro, p.endprofp_numero AS p__endprofp_numero, p.endprof_complemento AS p__endprof_complemento, p.endprof_bairro AS p__endprof_bairro, p.endprof_cidade AS p__endprof_cidade, p.contatos AS p__contatos, p.escolaridade_id AS p__escolaridade_id, p.profissao AS p__profissao, p.composicaofamiliar AS p__composicaofamiliar, p.preferenciareligiosa AS p__preferenciareligiosa, p.conhecimentoprograma AS p__conhecimentoprograma, p.interessepreliminar AS p__interessepreliminar, p.observacao AS p__observacao, p.datainscricao AS p__datainscricao, p.tecnicoresposavel AS p__tecnicoresposavel, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM padrinho p - ()
+Apr 22 16:51:09 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/modules/padrinho/templates/indexSuccess.php"
+Apr 22 16:51:09 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "end_prof_logradouro" on "Padrinho"
+Apr 22 16:51:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Apr 22 16:51:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 22 16:51:09 symfony [info] {sfWebDebugLogger} Configuration 0.83 ms (9)
+Apr 22 16:51:09 symfony [info] {sfWebDebugLogger} Factories 18.75 ms (1)
+Apr 22 16:51:09 symfony [info] {sfWebDebugLogger} Action "padrinho/index" 34.50 ms (1)
+Apr 22 16:51:09 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Apr 22 16:51:09 symfony [info] {sfWebDebugLogger} View "Success" for "padrinho/index" 56.59 ms (1)
+Apr 22 16:51:15 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /padrinho/delete/id/1 with parameters array (  'module' => 'padrinho',  'action' => 'delete',  'id' => '1',)
+Apr 22 16:51:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 22 16:51:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 22 16:51:15 symfony [info] {padrinhoActions} Call "padrinhoActions->executeDelete()"
+Apr 22 16:51:15 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 22 16:51:15 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.nome AS p__nome, p.sexo AS p__sexo, p.datanascimento AS p__datanascimento, p.end_logradouro AS p__end_logradouro, p.end_numero AS p__end_numero, p.end_complemento AS p__end_complemento, p.end_bairro AS p__end_bairro, p.end_cidade AS p__end_cidade, p.endprof_logradouro AS p__endprof_logradouro, p.endprofp_numero AS p__endprofp_numero, p.endprof_complemento AS p__endprof_complemento, p.endprof_bairro AS p__endprof_bairro, p.endprof_cidade AS p__endprof_cidade, p.contatos AS p__contatos, p.escolaridade_id AS p__escolaridade_id, p.profissao AS p__profissao, p.composicaofamiliar AS p__composicaofamiliar, p.preferenciareligiosa AS p__preferenciareligiosa, p.conhecimentoprograma AS p__conhecimentoprograma, p.interessepreliminar AS p__interessepreliminar, p.observacao AS p__observacao, p.datainscricao AS p__datainscricao, p.tecnicoresposavel AS p__tecnicoresposavel, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM padrinho p WHERE (p.id = ?) LIMIT 1 - (1)
+Apr 22 16:51:15 symfony [info] {Doctrine_Connection_Statement} execute : DELETE FROM padrinho WHERE id = ? - (1)
+Apr 22 16:51:15 symfony [info] {sfFrontWebController} Redirect to "http://localhost:8580/frontend_dev.php/padrinho"
+Apr 22 16:51:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Apr 22 16:51:15 symfony [info] {sfWebResponse} Send header "Location: http://localhost:8580/frontend_dev.php/padrinho"
+Apr 22 16:51:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 22 16:51:15 symfony [info] {sfWebDebugLogger} Configuration 0.73 ms (8)
+Apr 22 16:51:15 symfony [info] {sfWebDebugLogger} Factories 19.02 ms (1)
+Apr 22 16:51:15 symfony [info] {sfWebDebugLogger} Action "padrinho/delete" 51.68 ms (1)
+Apr 22 16:51:15 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Apr 22 16:51:15 symfony [info] {sfWebResponse} Send content (118 o)
+Apr 22 16:51:15 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /padrinho with parameters array (  'module' => 'padrinho',  'action' => 'index',)
+Apr 22 16:51:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 22 16:51:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 22 16:51:15 symfony [info] {padrinhoActions} Call "padrinhoActions->executeIndex()"
+Apr 22 16:51:15 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 22 16:51:15 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.nome AS p__nome, p.sexo AS p__sexo, p.datanascimento AS p__datanascimento, p.end_logradouro AS p__end_logradouro, p.end_numero AS p__end_numero, p.end_complemento AS p__end_complemento, p.end_bairro AS p__end_bairro, p.end_cidade AS p__end_cidade, p.endprof_logradouro AS p__endprof_logradouro, p.endprofp_numero AS p__endprofp_numero, p.endprof_complemento AS p__endprof_complemento, p.endprof_bairro AS p__endprof_bairro, p.endprof_cidade AS p__endprof_cidade, p.contatos AS p__contatos, p.escolaridade_id AS p__escolaridade_id, p.profissao AS p__profissao, p.composicaofamiliar AS p__composicaofamiliar, p.preferenciareligiosa AS p__preferenciareligiosa, p.conhecimentoprograma AS p__conhecimentoprograma, p.interessepreliminar AS p__interessepreliminar, p.observacao AS p__observacao, p.datainscricao AS p__datainscricao, p.tecnicoresposavel AS p__tecnicoresposavel, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM padrinho p - ()
+Apr 22 16:51:15 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/modules/padrinho/templates/indexSuccess.php"
+Apr 22 16:51:15 symfony [info] {sfPHPView} Decorate content with "/home/07764280631/sfprojects/abrigo/apps/frontend/templates/layout.php"
+Apr 22 16:51:15 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/templates/layout.php"
+Apr 22 16:51:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 22 16:51:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 22 16:51:15 symfony [info] {sfWebDebugLogger} Configuration 0.85 ms (9)
+Apr 22 16:51:15 symfony [info] {sfWebDebugLogger} Factories 18.19 ms (1)
+Apr 22 16:51:15 symfony [info] {sfWebDebugLogger} Action "padrinho/index" 36.86 ms (1)
+Apr 22 16:51:15 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Apr 22 16:51:15 symfony [info] {sfWebDebugLogger} View "Success" for "padrinho/index" 7.82 ms (1)
+Apr 22 16:51:15 symfony [info] {sfWebResponse} Send content (34643 o)
+Apr 22 16:54:54 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /pai with parameters array (  'module' => 'pai',  'action' => 'index',)
+Apr 22 16:54:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 22 16:54:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 22 16:54:54 symfony [info] {paiActions} Call "paiActions->executeIndex()"
+Apr 22 16:54:54 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 22 16:54:54 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.nome AS p__nome, p.datanascimento AS p__datanascimento, p.dataobito AS p__dataobito, p.end_logradouro AS p__end_logradouro, p.end_numero AS p__end_numero, p.end_complemento AS p__end_complemento, p.end_bairro AS p__end_bairro, p.end_cidade AS p__end_cidade, p.contatos AS p__contatos, p.autorizacaovisita AS p__autorizacaovisita, p.observacao AS p__observacao, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM pai p - ()
+Apr 22 16:54:54 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/modules/pai/templates/indexSuccess.php"
+Apr 22 16:54:54 symfony [info] {sfPHPView} Decorate content with "/home/07764280631/sfprojects/abrigo/apps/frontend/templates/layout.php"
+Apr 22 16:54:54 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/templates/layout.php"
+Apr 22 16:54:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 22 16:54:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 22 16:54:54 symfony [info] {sfWebDebugLogger} Configuration 12.90 ms (10)
+Apr 22 16:54:54 symfony [info] {sfWebDebugLogger} Factories 19.26 ms (1)
+Apr 22 16:54:54 symfony [info] {sfWebDebugLogger} Action "pai/index" 33.05 ms (1)
+Apr 22 16:54:54 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Apr 22 16:54:54 symfony [info] {sfWebDebugLogger} View "Success" for "pai/index" 9.17 ms (1)
+Apr 22 16:54:54 symfony [info] {sfWebResponse} Send content (32097 o)
+Apr 22 16:55:00 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /acolhido with parameters array (  'module' => 'acolhido',  'action' => 'index',)
+Apr 22 16:55:00 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 22 16:55:00 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 22 16:55:00 symfony [info] {acolhidoActions} Call "acolhidoActions->executeIndex()"
+Apr 22 16:55:00 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 22 16:55:00 symfony [info] {Doctrine_Connection_Mysql} query : SELECT a.id AS a__id, a.nome AS a__nome, a.sexo AS a__sexo, a.datanascimento AS a__datanascimento, a.dataingresso AS a__dataingresso, a.motivoingresso_id AS a__motivoingresso_id, a.processosrelacionados AS a__processosrelacionados, a.zona AS a__zona, a.distrito AS a__distrito, a.livro AS a__livro, a.folha AS a__folha, a.termo AS a__termo, a.carteiraindentidade AS a__carteiraindentidade, a.cpf AS a__cpf, a.titulo AS a__titulo, a.carteiratrabalho AS a__carteiratrabalho, a.possuideficiencia AS a__possuideficiencia, a.descricaodeficiencia AS a__descricaodeficiencia, a.usomedicamentocontrolado AS a__usomedicamentocontrolado, a.descricaomedicamentocontrolado AS a__descricaomedicamentocontrolado, a.mae_conhecido AS a__mae_conhecido, a.mae_id AS a__mae_id, a.pai_conhecido AS a__pai_conhecido, a.pai_id AS a__pai_id, a.responsavel_conhecido AS a__responsavel_conhecido, a.responsavel_id AS a__responsavel_id, a.responsavel_grauparentesco_id AS a__responsavel_grauparentesco_id, a.sumariosocial AS a__sumariosocial, a.sumariopsicologico AS a__sumariopsicologico, a.datadesligamento AS a__datadesligamento, a.motivodesligamento_id AS a__motivodesligamento_id, a.created_at AS a__created_at, a.updated_at AS a__updated_at FROM acolhido a - ()
+Apr 22 16:55:00 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/modules/acolhido/templates/indexSuccess.php"
+Apr 22 16:55:00 symfony [info] {sfPHPView} Decorate content with "/home/07764280631/sfprojects/abrigo/apps/frontend/templates/layout.php"
+Apr 22 16:55:00 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/templates/layout.php"
+Apr 22 16:55:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 22 16:55:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 22 16:55:00 symfony [info] {sfWebDebugLogger} Configuration 12.72 ms (10)
+Apr 22 16:55:00 symfony [info] {sfWebDebugLogger} Factories 18.89 ms (1)
+Apr 22 16:55:00 symfony [info] {sfWebDebugLogger} Action "acolhido/index" 34.82 ms (1)
+Apr 22 16:55:00 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Apr 22 16:55:00 symfony [info] {sfWebDebugLogger} View "Success" for "acolhido/index" 9.33 ms (1)
+Apr 22 16:55:00 symfony [info] {sfWebResponse} Send content (35832 o)
+Apr 22 16:55:02 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /acolhido/new with parameters array (  'module' => 'acolhido',  'action' => 'new',)
+Apr 22 16:55:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 22 16:55:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 22 16:55:02 symfony [info] {acolhidoActions} Call "acolhidoActions->executeNew()"
+Apr 22 16:55:02 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/modules/acolhido/templates/newSuccess.php"
+Apr 22 16:55:02 symfony [info] {sfPartialView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/modules/acolhido/templates/_form.php"
+Apr 22 16:55:02 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 22 16:55:02 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.nome AS m__nome, m.ordem AS m__ordem, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM motivo_ingresso m - ()
+Apr 22 16:55:02 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.nome AS m__nome, m.datanascimento AS m__datanascimento, m.dataobito AS m__dataobito, m.end_logradouro AS m__end_logradouro, m.end_numero AS m__end_numero, m.end_complemento AS m__end_complemento, m.end_bairro AS m__end_bairro, m.end_cidade AS m__end_cidade, m.contatos AS m__contatos, m.autorizacaovisita AS m__autorizacaovisita, m.observacao AS m__observacao, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM mae m - ()
+Apr 22 16:55:02 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.nome AS p__nome, p.datanascimento AS p__datanascimento, p.dataobito AS p__dataobito, p.end_logradouro AS p__end_logradouro, p.end_numero AS p__end_numero, p.end_complemento AS p__end_complemento, p.end_bairro AS p__end_bairro, p.end_cidade AS p__end_cidade, p.contatos AS p__contatos, p.autorizacaovisita AS p__autorizacaovisita, p.observacao AS p__observacao, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM pai p - ()
+Apr 22 16:55:02 symfony [info] {Doctrine_Connection_Mysql} query : SELECT g.id AS g__id, g.nome AS g__nome, g.ordem AS g__ordem, g.created_at AS g__created_at, g.updated_at AS g__updated_at FROM grau_parentesco_responsavel g - ()
+Apr 22 16:55:02 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.nome AS m__nome, m.ordem AS m__ordem, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM motivo_desligamento m - ()
+Apr 22 16:55:02 symfony [info] {sfPHPView} Decorate content with "/home/07764280631/sfprojects/abrigo/apps/frontend/templates/layout.php"
+Apr 22 16:55:02 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/templates/layout.php"
+Apr 22 16:55:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 22 16:55:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 22 16:55:02 symfony [info] {sfWebDebugLogger} Configuration 0.85 ms (9)
+Apr 22 16:55:02 symfony [info] {sfWebDebugLogger} Factories 18.88 ms (1)
+Apr 22 16:55:02 symfony [info] {sfWebDebugLogger} Action "acolhido/new" 39.81 ms (1)
+Apr 22 16:55:02 symfony [info] {sfWebDebugLogger} View "Success" for "acolhido/new" 92.63 ms (1)
+Apr 22 16:55:02 symfony [info] {sfWebDebugLogger} Partial "acolhido/_form" 84.84 ms (1)
+Apr 22 16:55:02 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (6)
+Apr 22 16:55:02 symfony [info] {sfWebResponse} Send content (77713 o)
+Apr 22 16:57:42 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /acolhido/new with parameters array (  'module' => 'acolhido',  'action' => 'new',)
+Apr 22 16:57:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 22 16:57:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 22 16:57:42 symfony [info] {acolhidoActions} Call "acolhidoActions->executeNew()"
+Apr 22 16:57:42 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/modules/acolhido/templates/newSuccess.php"
+Apr 22 16:57:42 symfony [info] {sfPartialView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/modules/acolhido/templates/_form.php"
+Apr 22 16:57:42 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 22 16:57:42 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.nome AS m__nome, m.ordem AS m__ordem, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM motivo_ingresso m - ()
+Apr 22 16:57:43 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.nome AS m__nome, m.datanascimento AS m__datanascimento, m.dataobito AS m__dataobito, m.end_logradouro AS m__end_logradouro, m.end_numero AS m__end_numero, m.end_complemento AS m__end_complemento, m.end_bairro AS m__end_bairro, m.end_cidade AS m__end_cidade, m.contatos AS m__contatos, m.autorizacaovisita AS m__autorizacaovisita, m.observacao AS m__observacao, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM mae m - ()
+Apr 22 16:57:43 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.nome AS p__nome, p.datanascimento AS p__datanascimento, p.dataobito AS p__dataobito, p.end_logradouro AS p__end_logradouro, p.end_numero AS p__end_numero, p.end_complemento AS p__end_complemento, p.end_bairro AS p__end_bairro, p.end_cidade AS p__end_cidade, p.contatos AS p__contatos, p.autorizacaovisita AS p__autorizacaovisita, p.observacao AS p__observacao, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM pai p - ()
+Apr 22 16:57:43 symfony [info] {Doctrine_Connection_Mysql} query : SELECT r.id AS r__id, r.nome AS r__nome, r.datanascimento AS r__datanascimento, r.dataobito AS r__dataobito, r.end_logradouro AS r__end_logradouro, r.end_numero AS r__end_numero, r.end_complemento AS r__end_complemento, r.end_bairro AS r__end_bairro, r.end_cidade AS r__end_cidade, r.contatos AS r__contatos, r.autorizacaovisita AS r__autorizacaovisita, r.observacao AS r__observacao, r.created_at AS r__created_at, r.updated_at AS r__updated_at FROM responsavel r - ()
+Apr 22 16:57:43 symfony [info] {Doctrine_Connection_Mysql} query : SELECT g.id AS g__id, g.nome AS g__nome, g.ordem AS g__ordem, g.created_at AS g__created_at, g.updated_at AS g__updated_at FROM grau_parentesco_responsavel g - ()
+Apr 22 16:57:43 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.nome AS m__nome, m.ordem AS m__ordem, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM motivo_desligamento m - ()
+Apr 22 16:57:43 symfony [info] {sfPHPView} Decorate content with "/home/07764280631/sfprojects/abrigo/apps/frontend/templates/layout.php"
+Apr 22 16:57:43 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/templates/layout.php"
+Apr 22 16:57:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 22 16:57:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 22 16:57:43 symfony [info] {sfWebDebugLogger} Configuration 0.86 ms (9)
+Apr 22 16:57:43 symfony [info] {sfWebDebugLogger} Factories 17.89 ms (1)
+Apr 22 16:57:43 symfony [info] {sfWebDebugLogger} Action "acolhido/new" 40.65 ms (1)
+Apr 22 16:57:43 symfony [info] {sfWebDebugLogger} View "Success" for "acolhido/new" 94.26 ms (1)
+Apr 22 16:57:43 symfony [info] {sfWebDebugLogger} Partial "acolhido/_form" 86.59 ms (1)
+Apr 22 16:57:43 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (7)
+Apr 22 16:57:43 symfony [info] {sfWebResponse} Send content (80596 o)
+Apr 22 17:03:23 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /padinho/new with parameters array (  'module' => 'padinho',  'action' => 'new',)
+Apr 22 17:03:23 symfony [info] {sfFrontWebController} Action "padinho/new" does not exist
+Apr 22 17:03:23 symfony [err] {sfError404Exception} Action "padinho/new" does not exist.
+Apr 22 17:03:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 22 17:03:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 22 17:03:23 symfony [info] {sfWebDebugLogger} Configuration 0.55 ms (5)
+Apr 22 17:03:23 symfony [info] {sfWebDebugLogger} Factories 20.15 ms (1)
+Apr 22 17:03:27 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /padrinho/new with parameters array (  'module' => 'padrinho',  'action' => 'new',)
+Apr 22 17:03:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 22 17:03:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 22 17:03:27 symfony [info] {padrinhoActions} Call "padrinhoActions->executeNew()"
+Apr 22 17:03:54 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /padrinho/new with parameters array (  'module' => 'padrinho',  'action' => 'new',)
+Apr 22 17:03:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 22 17:03:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 22 17:03:54 symfony [info] {padrinhoActions} Call "padrinhoActions->executeNew()"
+Apr 22 17:03:54 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/modules/padrinho/templates/newSuccess.php"
+Apr 22 17:03:54 symfony [info] {sfPartialView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/modules/padrinho/templates/_form.php"
+Apr 22 17:03:54 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 22 17:03:54 symfony [info] {Doctrine_Connection_Mysql} query : SELECT n.id AS n__id, n.nome AS n__nome, n.grau AS n__grau, n.ordem AS n__ordem, n.created_at AS n__created_at, n.updated_at AS n__updated_at FROM nivel_escolaridade n - ()
+Apr 22 17:03:54 symfony [info] {sfPHPView} Decorate content with "/home/07764280631/sfprojects/abrigo/apps/frontend/templates/layout.php"
+Apr 22 17:03:54 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/templates/layout.php"
+Apr 22 17:03:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 22 17:03:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 22 17:03:54 symfony [info] {sfWebDebugLogger} Configuration 0.84 ms (9)
+Apr 22 17:03:54 symfony [info] {sfWebDebugLogger} Factories 19.40 ms (1)
+Apr 22 17:03:54 symfony [info] {sfWebDebugLogger} Action "padrinho/new" 33.76 ms (1)
+Apr 22 17:03:54 symfony [info] {sfWebDebugLogger} View "Success" for "padrinho/new" 52.08 ms (1)
+Apr 22 17:03:54 symfony [info] {sfWebDebugLogger} Partial "padrinho/_form" 44.58 ms (1)
+Apr 22 17:03:54 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Apr 22 17:03:54 symfony [info] {sfWebResponse} Send content (63007 o)
+Apr 22 17:04:43 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /acolhido/new with parameters array (  'module' => 'acolhido',  'action' => 'new',)
+Apr 22 17:04:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 22 17:04:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 22 17:04:43 symfony [info] {acolhidoActions} Call "acolhidoActions->executeNew()"
+Apr 22 17:04:43 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/modules/acolhido/templates/newSuccess.php"
+Apr 22 17:04:43 symfony [info] {sfPartialView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/modules/acolhido/templates/_form.php"
+Apr 22 17:04:43 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 22 17:04:43 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.nome AS m__nome, m.ordem AS m__ordem, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM motivo_ingresso m - ()
+Apr 22 17:04:43 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.nome AS m__nome, m.datanascimento AS m__datanascimento, m.dataobito AS m__dataobito, m.end_logradouro AS m__end_logradouro, m.end_numero AS m__end_numero, m.end_complemento AS m__end_complemento, m.end_bairro AS m__end_bairro, m.end_cidade AS m__end_cidade, m.contatos AS m__contatos, m.autorizacaovisita AS m__autorizacaovisita, m.observacao AS m__observacao, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM mae m - ()
+Apr 22 17:04:43 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.nome AS p__nome, p.datanascimento AS p__datanascimento, p.dataobito AS p__dataobito, p.end_logradouro AS p__end_logradouro, p.end_numero AS p__end_numero, p.end_complemento AS p__end_complemento, p.end_bairro AS p__end_bairro, p.end_cidade AS p__end_cidade, p.contatos AS p__contatos, p.autorizacaovisita AS p__autorizacaovisita, p.observacao AS p__observacao, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM pai p - ()
+Apr 22 17:04:43 symfony [info] {Doctrine_Connection_Mysql} query : SELECT r.id AS r__id, r.nome AS r__nome, r.datanascimento AS r__datanascimento, r.dataobito AS r__dataobito, r.end_logradouro AS r__end_logradouro, r.end_numero AS r__end_numero, r.end_complemento AS r__end_complemento, r.end_bairro AS r__end_bairro, r.end_cidade AS r__end_cidade, r.contatos AS r__contatos, r.autorizacaovisita AS r__autorizacaovisita, r.observacao AS r__observacao, r.created_at AS r__created_at, r.updated_at AS r__updated_at FROM responsavel r - ()
+Apr 22 17:04:43 symfony [info] {Doctrine_Connection_Mysql} query : SELECT g.id AS g__id, g.nome AS g__nome, g.ordem AS g__ordem, g.created_at AS g__created_at, g.updated_at AS g__updated_at FROM grau_parentesco_responsavel g - ()
+Apr 22 17:04:43 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.nome AS m__nome, m.ordem AS m__ordem, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM motivo_desligamento m - ()
+Apr 22 17:04:43 symfony [info] {sfPHPView} Decorate content with "/home/07764280631/sfprojects/abrigo/apps/frontend/templates/layout.php"
+Apr 22 17:04:43 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/templates/layout.php"
+Apr 22 17:04:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 22 17:04:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 22 17:04:43 symfony [info] {sfWebDebugLogger} Configuration 0.85 ms (9)
+Apr 22 17:04:43 symfony [info] {sfWebDebugLogger} Factories 19.16 ms (1)
+Apr 22 17:04:43 symfony [info] {sfWebDebugLogger} Action "acolhido/new" 41.17 ms (1)
+Apr 22 17:04:43 symfony [info] {sfWebDebugLogger} View "Success" for "acolhido/new" 93.08 ms (1)
+Apr 22 17:04:43 symfony [info] {sfWebDebugLogger} Partial "acolhido/_form" 85.39 ms (1)
+Apr 22 17:04:43 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (7)
+Apr 22 17:04:43 symfony [info] {sfWebResponse} Send content (80489 o)
+Apr 22 17:07:17 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /acolhido/new with parameters array (  'module' => 'acolhido',  'action' => 'new',)
+Apr 22 17:07:17 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 22 17:07:17 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 22 17:07:17 symfony [info] {acolhidoActions} Call "acolhidoActions->executeNew()"
+Apr 22 17:07:17 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/modules/acolhido/templates/newSuccess.php"
+Apr 22 17:07:17 symfony [info] {sfPartialView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/modules/acolhido/templates/_form.php"
+Apr 22 17:07:17 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 22 17:07:17 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.nome AS m__nome, m.ordem AS m__ordem, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM motivo_ingresso m - ()
+Apr 22 17:07:17 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.nome AS m__nome, m.datanascimento AS m__datanascimento, m.dataobito AS m__dataobito, m.end_logradouro AS m__end_logradouro, m.end_numero AS m__end_numero, m.end_complemento AS m__end_complemento, m.end_bairro AS m__end_bairro, m.end_cidade AS m__end_cidade, m.contatos AS m__contatos, m.autorizacaovisita AS m__autorizacaovisita, m.observacao AS m__observacao, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM mae m - ()
+Apr 22 17:07:17 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.nome AS p__nome, p.datanascimento AS p__datanascimento, p.dataobito AS p__dataobito, p.end_logradouro AS p__end_logradouro, p.end_numero AS p__end_numero, p.end_complemento AS p__end_complemento, p.end_bairro AS p__end_bairro, p.end_cidade AS p__end_cidade, p.contatos AS p__contatos, p.autorizacaovisita AS p__autorizacaovisita, p.observacao AS p__observacao, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM pai p - ()
+Apr 22 17:07:17 symfony [info] {Doctrine_Connection_Mysql} query : SELECT r.id AS r__id, r.nome AS r__nome, r.datanascimento AS r__datanascimento, r.dataobito AS r__dataobito, r.end_logradouro AS r__end_logradouro, r.end_numero AS r__end_numero, r.end_complemento AS r__end_complemento, r.end_bairro AS r__end_bairro, r.end_cidade AS r__end_cidade, r.contatos AS r__contatos, r.autorizacaovisita AS r__autorizacaovisita, r.observacao AS r__observacao, r.created_at AS r__created_at, r.updated_at AS r__updated_at FROM responsavel r - ()
+Apr 22 17:07:17 symfony [info] {Doctrine_Connection_Mysql} query : SELECT g.id AS g__id, g.nome AS g__nome, g.ordem AS g__ordem, g.created_at AS g__created_at, g.updated_at AS g__updated_at FROM grau_parentesco_responsavel g - ()
+Apr 22 17:07:17 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.nome AS m__nome, m.ordem AS m__ordem, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM motivo_desligamento m - ()
+Apr 22 17:07:17 symfony [info] {sfPHPView} Decorate content with "/home/07764280631/sfprojects/abrigo/apps/frontend/templates/layout.php"
+Apr 22 17:07:17 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/templates/layout.php"
+Apr 22 17:07:17 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 22 17:07:17 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 22 17:07:17 symfony [info] {sfWebDebugLogger} Configuration 1.03 ms (9)
+Apr 22 17:07:17 symfony [info] {sfWebDebugLogger} Factories 20.14 ms (1)
+Apr 22 17:07:17 symfony [info] {sfWebDebugLogger} Action "acolhido/new" 41.63 ms (1)
+Apr 22 17:07:17 symfony [info] {sfWebDebugLogger} View "Success" for "acolhido/new" 93.25 ms (1)
+Apr 22 17:07:17 symfony [info] {sfWebDebugLogger} Partial "acolhido/_form" 85.48 ms (1)
+Apr 22 17:07:17 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (7)
+Apr 22 17:07:17 symfony [info] {sfWebResponse} Send content (80521 o)
+Apr 22 17:07:51 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /acolhido/new with parameters array (  'module' => 'acolhido',  'action' => 'new',)
+Apr 22 17:07:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 22 17:07:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 22 17:07:51 symfony [info] {acolhidoActions} Call "acolhidoActions->executeNew()"
+Apr 22 17:07:51 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/modules/acolhido/templates/newSuccess.php"
+Apr 22 17:07:51 symfony [info] {sfPartialView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/modules/acolhido/templates/_form.php"
+Apr 22 17:07:51 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 22 17:07:51 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.nome AS m__nome, m.ordem AS m__ordem, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM motivo_ingresso m - ()
+Apr 22 17:07:51 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.nome AS m__nome, m.datanascimento AS m__datanascimento, m.dataobito AS m__dataobito, m.end_logradouro AS m__end_logradouro, m.end_numero AS m__end_numero, m.end_complemento AS m__end_complemento, m.end_bairro AS m__end_bairro, m.end_cidade AS m__end_cidade, m.contatos AS m__contatos, m.autorizacaovisita AS m__autorizacaovisita, m.observacao AS m__observacao, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM mae m - ()
+Apr 22 17:07:51 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.nome AS p__nome, p.datanascimento AS p__datanascimento, p.dataobito AS p__dataobito, p.end_logradouro AS p__end_logradouro, p.end_numero AS p__end_numero, p.end_complemento AS p__end_complemento, p.end_bairro AS p__end_bairro, p.end_cidade AS p__end_cidade, p.contatos AS p__contatos, p.autorizacaovisita AS p__autorizacaovisita, p.observacao AS p__observacao, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM pai p - ()
+Apr 22 17:07:51 symfony [info] {Doctrine_Connection_Mysql} query : SELECT r.id AS r__id, r.nome AS r__nome, r.datanascimento AS r__datanascimento, r.dataobito AS r__dataobito, r.end_logradouro AS r__end_logradouro, r.end_numero AS r__end_numero, r.end_complemento AS r__end_complemento, r.end_bairro AS r__end_bairro, r.end_cidade AS r__end_cidade, r.contatos AS r__contatos, r.autorizacaovisita AS r__autorizacaovisita, r.observacao AS r__observacao, r.created_at AS r__created_at, r.updated_at AS r__updated_at FROM responsavel r - ()
+Apr 22 17:07:51 symfony [info] {Doctrine_Connection_Mysql} query : SELECT g.id AS g__id, g.nome AS g__nome, g.ordem AS g__ordem, g.created_at AS g__created_at, g.updated_at AS g__updated_at FROM grau_parentesco_responsavel g - ()
+Apr 22 17:07:51 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.nome AS m__nome, m.ordem AS m__ordem, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM motivo_desligamento m - ()
+Apr 22 17:07:51 symfony [info] {sfPHPView} Decorate content with "/home/07764280631/sfprojects/abrigo/apps/frontend/templates/layout.php"
+Apr 22 17:07:51 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/templates/layout.php"
+Apr 22 17:07:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 22 17:07:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 22 17:07:51 symfony [info] {sfWebDebugLogger} Configuration 0.84 ms (9)
+Apr 22 17:07:51 symfony [info] {sfWebDebugLogger} Factories 18.14 ms (1)
+Apr 22 17:07:51 symfony [info] {sfWebDebugLogger} Action "acolhido/new" 41.58 ms (1)
+Apr 22 17:07:51 symfony [info] {sfWebDebugLogger} View "Success" for "acolhido/new" 73.00 ms (1)
+Apr 22 17:07:51 symfony [info] {sfWebDebugLogger} Partial "acolhido/_form" 65.17 ms (1)
+Apr 22 17:07:51 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (7)
+Apr 22 17:07:51 symfony [info] {sfWebResponse} Send content (81048 o)
+Apr 22 17:15:47 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /acolhido/new with parameters array (  'module' => 'acolhido',  'action' => 'new',)
+Apr 22 17:15:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 22 17:15:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 22 17:15:47 symfony [info] {acolhidoActions} Call "acolhidoActions->executeNew()"
+Apr 22 17:15:47 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/modules/acolhido/templates/newSuccess.php"
+Apr 22 17:15:47 symfony [info] {sfPartialView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/modules/acolhido/templates/_form.php"
+Apr 22 17:15:47 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 22 17:15:47 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.nome AS m__nome, m.ordem AS m__ordem, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM motivo_ingresso m - ()
+Apr 22 17:15:47 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.nome AS m__nome, m.datanascimento AS m__datanascimento, m.dataobito AS m__dataobito, m.end_logradouro AS m__end_logradouro, m.end_numero AS m__end_numero, m.end_complemento AS m__end_complemento, m.end_bairro AS m__end_bairro, m.end_cidade AS m__end_cidade, m.contatos AS m__contatos, m.autorizacaovisita AS m__autorizacaovisita, m.observacao AS m__observacao, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM mae m - ()
+Apr 22 17:15:47 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.nome AS p__nome, p.datanascimento AS p__datanascimento, p.dataobito AS p__dataobito, p.end_logradouro AS p__end_logradouro, p.end_numero AS p__end_numero, p.end_complemento AS p__end_complemento, p.end_bairro AS p__end_bairro, p.end_cidade AS p__end_cidade, p.contatos AS p__contatos, p.autorizacaovisita AS p__autorizacaovisita, p.observacao AS p__observacao, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM pai p - ()
+Apr 22 17:15:47 symfony [info] {Doctrine_Connection_Mysql} query : SELECT r.id AS r__id, r.nome AS r__nome, r.datanascimento AS r__datanascimento, r.dataobito AS r__dataobito, r.end_logradouro AS r__end_logradouro, r.end_numero AS r__end_numero, r.end_complemento AS r__end_complemento, r.end_bairro AS r__end_bairro, r.end_cidade AS r__end_cidade, r.contatos AS r__contatos, r.autorizacaovisita AS r__autorizacaovisita, r.observacao AS r__observacao, r.created_at AS r__created_at, r.updated_at AS r__updated_at FROM responsavel r - ()
+Apr 22 17:15:47 symfony [info] {Doctrine_Connection_Mysql} query : SELECT g.id AS g__id, g.nome AS g__nome, g.ordem AS g__ordem, g.created_at AS g__created_at, g.updated_at AS g__updated_at FROM grau_parentesco_responsavel g - ()
+Apr 22 17:15:47 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.nome AS m__nome, m.ordem AS m__ordem, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM motivo_desligamento m - ()
+Apr 22 17:15:47 symfony [info] {sfPHPView} Decorate content with "/home/07764280631/sfprojects/abrigo/apps/frontend/templates/layout.php"
+Apr 22 17:15:47 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/templates/layout.php"
+Apr 22 17:15:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 22 17:15:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 22 17:15:47 symfony [info] {sfWebDebugLogger} Configuration 0.91 ms (9)
+Apr 22 17:15:47 symfony [info] {sfWebDebugLogger} Factories 17.93 ms (1)
+Apr 22 17:15:47 symfony [info] {sfWebDebugLogger} Action "acolhido/new" 40.47 ms (1)
+Apr 22 17:15:47 symfony [info] {sfWebDebugLogger} View "Success" for "acolhido/new" 72.53 ms (1)
+Apr 22 17:15:47 symfony [info] {sfWebDebugLogger} Partial "acolhido/_form" 64.57 ms (1)
+Apr 22 17:15:47 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (7)
+Apr 22 17:15:47 symfony [info] {sfWebResponse} Send content (82784 o)
+Apr 22 17:24:00 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /acolhido/new with parameters array (  'module' => 'acolhido',  'action' => 'new',)
+Apr 22 17:24:00 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 22 17:24:00 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 22 17:24:00 symfony [info] {acolhidoActions} Call "acolhidoActions->executeNew()"
+Apr 22 17:24:00 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/modules/acolhido/templates/newSuccess.php"
+Apr 22 17:24:00 symfony [info] {sfPartialView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/modules/acolhido/templates/_form.php"
+Apr 22 17:24:00 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 22 17:24:00 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.nome AS m__nome, m.ordem AS m__ordem, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM motivo_ingresso m - ()
+Apr 22 17:24:00 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.nome AS m__nome, m.datanascimento AS m__datanascimento, m.dataobito AS m__dataobito, m.end_logradouro AS m__end_logradouro, m.end_numero AS m__end_numero, m.end_complemento AS m__end_complemento, m.end_bairro AS m__end_bairro, m.end_cidade AS m__end_cidade, m.contatos AS m__contatos, m.autorizacaovisita AS m__autorizacaovisita, m.observacao AS m__observacao, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM mae m - ()
+Apr 22 17:24:00 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.nome AS p__nome, p.datanascimento AS p__datanascimento, p.dataobito AS p__dataobito, p.end_logradouro AS p__end_logradouro, p.end_numero AS p__end_numero, p.end_complemento AS p__end_complemento, p.end_bairro AS p__end_bairro, p.end_cidade AS p__end_cidade, p.contatos AS p__contatos, p.autorizacaovisita AS p__autorizacaovisita, p.observacao AS p__observacao, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM pai p - ()
+Apr 22 17:24:00 symfony [info] {Doctrine_Connection_Mysql} query : SELECT r.id AS r__id, r.nome AS r__nome, r.datanascimento AS r__datanascimento, r.dataobito AS r__dataobito, r.end_logradouro AS r__end_logradouro, r.end_numero AS r__end_numero, r.end_complemento AS r__end_complemento, r.end_bairro AS r__end_bairro, r.end_cidade AS r__end_cidade, r.contatos AS r__contatos, r.autorizacaovisita AS r__autorizacaovisita, r.observacao AS r__observacao, r.created_at AS r__created_at, r.updated_at AS r__updated_at FROM responsavel r - ()
+Apr 22 17:24:00 symfony [info] {Doctrine_Connection_Mysql} query : SELECT g.id AS g__id, g.nome AS g__nome, g.ordem AS g__ordem, g.created_at AS g__created_at, g.updated_at AS g__updated_at FROM grau_parentesco_responsavel g - ()
+Apr 22 17:24:00 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.nome AS m__nome, m.ordem AS m__ordem, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM motivo_desligamento m - ()
+Apr 22 17:24:00 symfony [info] {sfPHPView} Decorate content with "/home/07764280631/sfprojects/abrigo/apps/frontend/templates/layout.php"
+Apr 22 17:24:00 symfony [info] {sfPHPView} Render "/home/07764280631/sfprojects/abrigo/apps/frontend/templates/layout.php"
+Apr 22 17:24:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 22 17:24:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 22 17:24:00 symfony [info] {sfWebDebugLogger} Configuration 0.85 ms (9)
+Apr 22 17:24:00 symfony [info] {sfWebDebugLogger} Factories 19.29 ms (1)
+Apr 22 17:24:00 symfony [info] {sfWebDebugLogger} Action "acolhido/new" 41.16 ms (1)
+Apr 22 17:24:00 symfony [info] {sfWebDebugLogger} View "Success" for "acolhido/new" 73.46 ms (1)
+Apr 22 17:24:00 symfony [info] {sfWebDebugLogger} Partial "acolhido/_form" 65.30 ms (1)
+Apr 22 17:24:00 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (7)
+Apr 22 17:24:00 symfony [info] {sfWebResponse} Send content (82784 o)

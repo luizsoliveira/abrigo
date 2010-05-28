@@ -1,0 +1,37 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           EntidadesPassadasAcolhido
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          entidades_passadas_acolhido
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields: 
+        nomeEntidade: {label: Nome da entidade, attributes: { size:  50 }}
+        dataEntrada: {label: Data de entrada}
+        dataSaida: {label: Data de saída,  date_format: dd/MM/yy}
+        acolhidoNome: {label: Acolhido}
+   
+        
+      list: 
+        title: Entidades passadas dos acolhidos
+        display: [=acolhidoNome, nomeEntidade, dataSaida]  
+      filter: 
+        display: [acolhido_id, nomeEntidade, dataEntrada, dataSaida] 
+      form: ~
+      edit:
+        title: Editando o registro de entidade passada do acolhido: %%acolhidoNome%%
+        fields:
+          
+      new:
+        title: Novo registro de entidade passada
+        fields:
+         
+      

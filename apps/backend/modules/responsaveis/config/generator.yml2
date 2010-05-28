@@ -1,0 +1,45 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PaisEResponsavel
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          responsavel
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields: 
+        nome: {attributes: { size:  50 }}
+        sexo: {label: Sexo}
+        endLogradouro: {label: Logradouro, attributes: { size:  50 }}
+        endNumero: {label: Numero, attributes: { size:  50 }}
+        endBairro: {label: Bairro, attributes: { size:  50 }}
+        endCidade: {label: Cidade, attributes: { size:  50 }}
+        endEstado: {label: Estado}
+        endCep: {label: CEP, attributes: {maxlength: 9}}
+        contatos: {attributes: {cols: 50}}
+        autorizacaoVisita: {label: Autorização Visita}
+        dataNascimento: {label: Data de nascimento}
+        observacao: {label: Observação, attributes: {rows: 10, cols: 50}}
+      list: 
+        title: Responsáveis
+        display: [=nome, autorizacaoVisita, endCidade, endEstado]  
+      filter: 
+        display: [nome, autorizacaoVisita, endCidade, endEstado] 
+      form:
+        display:   
+           Geral: [nome, dataNascimento, sexo] 
+           Endereço: [endLogradouro, endNumero, endBairro, endCidade, endEstado, endCep]
+           Outros: [contatos, autorizacaoVisita, observacao]
+      edit:
+        title: Editando o responsável: %%nome%%
+      new:
+        title: Novo Responsável
+        fields:
+          dataNascimento: {label: Data de nascimento}
+          observacao: {label: Observação}

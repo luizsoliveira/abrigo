@@ -1,0 +1,72 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Acolhido
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             true
+    singular:              ~
+    plural:                ~
+    route_prefix:          acolhido
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields: 
+        nome: {attributes: { size:  50 }}
+        dataNascimento: {label: Data de nascimento}
+        dataIngresso: {label: Data de ingresso}
+        motivoIngresso_id: {label: Motivo de ingresso}
+        motivoDesligamento_id: {label: Motivo de desligamento}
+        processosRelacionados: {label: Processos relacionados, attributes: {rows: 10, cols: 50}}
+        documentoIdentidade: {label: Documento de identidade}
+        cpf: {label: CPF}
+        titulo: {label: Título de eleitor}
+        carteiraTrabalho: {label: Carteira de trabalho}
+        possuiDeficiencia: {label: Possui deficiência}
+        descricaoDeficiencia: {label: Descrição da deficiência, attributes: {rows: 10, cols: 50}}
+        usoMedicamentoControlado: {label: Medicamento controlado}
+        descricaoMedicamentoControlado: {label: Descrição do medicamento controlado, attributes: {rows: 10, cols: 50}}
+        responsavelGrauParentesco_id: {label: Grau de parentêsco do responsável}
+        sumarioSocial: {label: Sumário social, attributes: {rows: 10, cols: 50}}
+        sumarioPsicologico: {label: Sumário psicológico, attributes: {rows: 10, cols: 50}}
+        dataDesligamento: {label: Data de desligamento}
+        mae_id: {label: Mãe}
+        situacao: {label: Situação}
+        
+      list: 
+        title: Acolhidos
+        display: [=nome, situacao]  
+        object_actions:
+          _edit: ~
+          _delete: ~
+          viewEscolaridade: { label: Escolaridade, action: escolaridades }
+      filter: 
+        display: [nome, sexo, motivoIngresso_id, possuiDeficiencia, usoMedicamentoControlado, motivoDesligamento_id, pai_id, mae_id, responsavel_id, dataNascimento, dataIngresso, dataDesligamento] 
+      form:
+        display:   
+           Geral: [nome, dataNascimento, sexo] 
+           Ingresso: [dataIngresso, motivoIngresso_id]
+           Documentação: [processosRelacionados, zona, distrito, livro, folha, termo, documentoIdentidade, cpf, titulo, carteiraTrabalho]
+           Necessidades especiais: [possuiDeficiencia, descricaoDeficiencia, usoMedicamentoControlado, descricaoMedicamentoControlado]
+           Mãe: [mae_id]
+           Pai: [pai_id]
+           Responsável: [responsavelGrauParentesco_id, responsavel_id]
+           Perfil: [sumarioSocial, sumarioPsicologico]
+      edit:
+        title: Editando o acolhido: %%nome%%
+        display:   
+           Geral: [nome, dataNascimento, sexo] 
+           Ingresso: [dataIngresso, motivoIngresso_id]
+           Documentação: [processosRelacionados, zona, distrito, livro, folha, termo, documentoIdentidade, cpf, titulo, carteiraTrabalho]
+           Necessidades especiais: [possuiDeficiencia, descricaoDeficiencia, usoMedicamentoControlado, descricaoMedicamentoControlado]
+           Mãe: [mae_id]
+           Pai: [pai_id]
+           Responsável: [responsavelGrauParentesco_id, responsavel_id]
+           Perfil: [sumarioSocial, sumarioPsicologico]
+           Desligamento: [motivoDesligamento_id, dataDesligamento]
+      new:
+        title: Novo Acolhido
+        fields:
+         

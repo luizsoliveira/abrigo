@@ -1,0 +1,223 @@
+Pessoa:
+  columns:
+    nome:         { type: string(255), notnull: true }
+    sexo: { type: enum, length: 9, values:['Masculino','Feminino'], notnull:true}
+    dataNascimento:      { type: date }
+
+NivelEscolaridade:
+  columns:
+    nome:         { type: string(100), notnull: true }
+    grau:         { type: string(100), notnull: true }
+    ordem:        { type: integer }
+
+Padrinho:
+  inheritance:
+    type: concrete
+    extends: Pessoa
+  columns:
+    endLogradouro:         { type: string(255) }
+    endNumero:         { type: string(50) }
+    endComplemento:         { type: string(50) }
+    endBairro:         { type: string(100) }
+    endCidade:         { type: string(255) }
+    endEstado: { type: enum, length: 2, values:['AC','AL','AP','AM','BA','CE','DF','GO','ES','MA','MT','MS','MG','PA','PB','PR','PE','PI','RJ','RN','RS','RO','RR','SP','SC','SE','TO'], default: RJ, notnull:true}
+    endCep:         { type: string(9) }
+    endProfLogradouro:         { type: string(255) }
+    endProfNumero:         { type: string(50) }
+    endProfComplemento:         { type: string(50) }
+    endProfBairro:         { type: string(100) }
+    endProfCidade:         { type: string(255) }
+    endProfEstado: { type: enum, length: 2, values:['AC','AL','AP','AM','BA','CE','DF','GO','ES','MA','MT','MS','MG','PA','PB','PR','PE','PI','RJ','RN','RS','RO','RR','SP','SC','SE','TO'], default: RJ, notnull:true}
+    endProfCep:         { type: string(9) }
+    contatos: { type: string(4000) }
+    escolaridade_id:         { type: integer }
+    profissao:         { type: string(255) }
+    composicaoFamiliar: { type: string(4000) }
+    preferenciaReligiosa: { type: string(4000) }
+    conhecimentoPrograma:         { type: string(4000) }
+    interessePreliminar:         { type: string(4000) }
+    observacao:         { type: string(4000) }
+    dataInscricao:      { type: date }
+    tecnicoResponsavel:         { type: string(255) }
+  relations:
+    NivelEscolaridade: { local: escolaridade_id, foreign: id, foreignAlias: PadrinhoEscolaridade }
+
+
+Voluntario:
+  inheritance:
+    type: concrete
+    extends: Pessoa
+  columns:
+    endLogradouro:         { type: string(255) }
+    endNumero:         { type: string(50) }
+    endComplemento:         { type: string(50) }
+    endBairro:         { type: string(100) }
+    endCidade:         { type: string(255) }
+    endEstado: { type: enum, length: 2, values:['AC','AL','AP','AM','BA','CE','DF','GO','ES','MA','MT','MS','MG','PA','PB','PR','PE','PI','RJ','RN','RS','RO','RR','SP','SC','SE','TO'], default: RJ, notnull:true}
+    endCep:         { type: string(9) }
+    endProfLogradouro:         { type: string(255) }
+    endProfNumero:         { type: string(50) }
+    endProfComplemento:         { type: string(50) }
+    endProfBairro:         { type: string(100) }
+    endProfCidade:         { type: string(255) }
+    endProfEstado: { type: enum, length: 2, values:['AC','AL','AP','AM','BA','CE','DF','GO','ES','MA','MT','MS','MG','PA','PB','PR','PE','PI','RJ','RN','RS','RO','RR','SP','SC','SE','TO'], default: RJ, notnull:true}
+    endProfCep:         { type: string(9) }
+    contatos: { type: string(4000) }
+    escolaridade_id:         { type: integer }
+    profissao:         { type: string(255) }
+    composicaoFamiliar: { type: string(4000) }
+    preferenciaReligiosa: { type: string(4000) }
+    conhecimentoPrograma:         { type: string(4000) }
+    disponibilidadeHorario:         { type: string(4000) }
+    atividadeDesenvolvida:         { type: string(4000) }
+    observacao:         { type: string(4000) }
+    dataInscricao:      { type: date }
+    tecnicoResponsavel:         { type: string(255) }
+  relations:
+    NivelEscolaridade: { local: escolaridade_id, foreign: id, foreignAlias: VoluntarioEscolaridade }
+
+GrauParentescoResponsavel:
+  columns:
+    nome:         { type: string(255), notnull: true }
+    ordem:        { type: integer }
+
+Responsavel:
+  inheritance:
+    type: concrete
+    extends: Pessoa
+  columns:
+    dataObito:      { type: date }
+    endLogradouro:         { type: string(255) }
+    endNumero:         { type: string(50) }
+    endComplemento:         { type: string(50) }
+    endBairro:         { type: string(100) }
+    endCidade:         { type: string(255) }
+    endEstado: { type: enum, length: 2, values:['AC','AL','AP','AM','BA','CE','DF','GO','ES','MA','MT','MS','MG','PA','PB','PR','PE','PI','RJ','RN','RS','RO','RR','SP','SC','SE','TO'], default: RJ, notnull:true}
+    endCep:         { type: string(9) }
+    contatos: { type: string(4000) }
+    autorizacaoVisita:  { type: enum, length: 3, values:['Sim','Não'], notnull:true}
+    observacao:         { type: string(4000) }
+    
+Pai:
+  inheritance:
+    type: simple
+    extends: Responsavel
+
+Mae:
+  inheritance:
+    type: simple
+    extends: Responsavel
+
+
+
+MotivoIngresso:
+  columns:
+    nome:         { type: string(255), notnull: true }
+    ordem:      { type: integer }
+
+MotivoDesligamento:
+  columns:
+    nome:         { type: string(255), notnull: true }
+    ordem:        { type: integer }
+
+
+Acolhido:
+  inheritance:
+    type: concrete
+    extends: Pessoa
+  columns:
+    dataIngresso:      { type: date }
+    motivoIngresso_id: { type: integer, notnull: true }
+    processosRelacionados:         { type: string(4000)}
+    zona:         { type: string(100)}
+    distrito:         { type: string(100)}
+    livro:         { type: string(100)}
+    folha:         { type: string(100)}
+    termo:         { type: string(100)}
+    documentoIdentidade:         { type: string(100)}
+    cpf:         { type: string(100)}
+    titulo:         { type: string(100)}
+    carteiraTrabalho:         { type: string(100)}
+    possuiDeficiencia:         { type: enum, length: 3, values:['Sim','Não'], notnull:true, default: Não}
+    descricaoDeficiencia:         { type: string(4000)}
+    usoMedicamentoControlado:         { type: enum, length: 3, values:['Sim','Não'], notnull:true, default: Não}
+    descricaoMedicamentoControlado:         { type: string(4000)}
+    mae_id: { type: integer}
+    pai_id: { type: integer}
+    responsavel_id:                 { type: integer}
+    responsavelGrauParentesco_id: {type: integer}
+    sumarioSocial:         { type: string(4000)}
+    sumarioPsicologico:         { type: string(4000)}
+    dataDesligamento:      { type: date }
+    motivoDesligamento_id: { type: integer}
+  relations:
+    MotivoIngresso: { local: motivoIngresso_id, foreign: id, foreignAlias: AcolhidoMotivoIngresso }
+    MotivoDesligamento: { local: motivoDesligamento_id, foreign: id, foreignAlias: AcolhidoMotivoDesligamento }
+    Pai: { local: pai_id, foreign: id, foreignAlias: AcolhidoPai }
+    Mae: { local: mae_id, foreign: id, foreignAlias: AcolhidoMae }
+    Responsavel: { local: responsavel_id, foreign: id, foreignAlias: AcolhidoResponsavel }
+    GrauParentescoResponsavel: { local: responsavelGrauParentesco_id, foreign: id, foreignAlias: AcolhidoResponsavelGrauParentesco }
+
+
+EscolaridadeAcolhido:
+  columns:
+    acolhido_id: { type: integer, primary: true  }
+    escolaridade_id: { type: integer, primary: true }
+    nomeEscola: { type: string(255), notnull: true }
+    dataConclusao: { type: date}
+  relations:
+    Acolhido: { local:  acolhido_id, foreign: id }
+    NivelEscolaridade: { local: escolaridade_id, foreign: id, foreignAlias: AcolhidoEscolaridade }
+
+CursoExternoAcolhido:
+  columns:
+    acolhido_id: { type: integer  }
+    nomeCurso: {type: string(255), notnull: true }
+    descricao: { type: string(4000)}
+    nomeEscola: {type: string(255), notnull: true }
+    dataConclusao: { type: date}
+  relations:
+    Acolhido: { local:  acolhido_id, foreign: id }
+
+EntidadesPassadasAcolhido:
+  columns:
+    acolhido_id: { type: integer, notnull: true  }
+    nomeEntidade: {type: string(255), notnull: true }
+    dataEntrada: { type: date, notnull: true}
+    dataSaida: { type: date, notnull: true}
+  relations:
+    Acolhido: { local:  acolhido_id, foreign: id, foreignAlias: AcolhidoEntidadesPassadas }
+
+EntradasESaidasAcolhido:
+  columns:
+    acolhido_id: { type: integer, notnull: true  }
+    mae_id: { type: integer}
+    pai_id: { type: integer}
+    responsavel_id:  { type: integer}
+    voluntario_id:  { type: integer}
+    padrinho_id:  { type: integer}
+    dataSaida: { type: timestamp, notnull: true}
+    dataPrevistaRetorno: { type: timestamp, notnull: true}
+    dataRetorno: { type: timestamp}
+    observacoes:    { type: string(4000) }
+  relations:
+    Acolhido: { local:  acolhido_id, foreign: id, foreignAlias: EntradasESaidasAcolhido }
+    Pai: { local: pai_id, foreign: id, foreignAlias: EntradasESaidasPai }
+    Mae: { local: mae_id, foreign: id, foreignAlias: EntradasESaidasMae }
+    Responsavel: { local: responsavel_id, foreign: id, foreignAlias: EntradasESaidasResponsavel }
+    Voluntario: { local: voluntario_id, foreign: id, foreignAlias: EntradasESaidasVoluntario }
+    Padrinho: { local: padrinho_id, foreign: id, foreignAlias: EntradasESaidasPadrinho }
+
+Apadrinhamento:
+  columns:
+    acolhido_id: { type: integer, primary: true  }
+    padrinho_id: { type: integer, primary: true  }
+    dataInicio: { type: date, notnull: true}
+    dataFim: { type: date }
+    observacoes:    { type: string(4000) }
+  relations:
+    Acolhido: { local:  acolhido_id, foreign: id, foreignAlias: ApadrinhamentoAcolhido }
+    Padrinho: { local: padrinho_id, foreign: id, foreignAlias: ApadrinhamentoPadrinho }
+
+
+

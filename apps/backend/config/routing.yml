@@ -1,0 +1,154 @@
+apadrinhamento:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Apadrinhamento
+    module:               apadrinhamento
+    prefix_path:          /apadrinhamento
+    column:               acolhido_id/:padrinho_id
+    with_wildcard_routes: true
+
+responsavel:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Responsavel
+    module:               responsavel
+    prefix_path:          /responsavel
+    column:               id
+    with_wildcard_routes: true
+
+entradas_e_saidas_acolhido_entradas_e_saidas:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                EntradasESaidasAcolhido
+    module:               entradas_e_saidas
+    prefix_path:          /entradas_e_saidas
+    column:               id
+    with_wildcard_routes: true
+
+entradas_e_saidas_acolhido:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                EntradasESaidasAcolhido
+    module:               entradas-e-saidas
+    prefix_path:          /entradas-e-saidas
+    column:               id
+    with_wildcard_routes: true
+
+voluntario:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Voluntario
+    module:               voluntario
+    prefix_path:          /voluntario
+    column:               id
+    with_wildcard_routes: true
+
+responsaveis:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Responsaveis
+    module:               responsaveis
+    prefix_path:          /responsaveis
+    column:               id
+    with_wildcard_routes: true
+
+padrinho:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Padrinho
+    module:               padrinho
+    prefix_path:          /padrinho
+    column:               id
+    with_wildcard_routes: true
+
+nivel_escolaridade:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                NivelEscolaridade
+    module:               nivel_escolaridade
+    prefix_path:          /nivel_escolaridade
+    column:               id
+    with_wildcard_routes: true
+
+motivo_ingresso:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                MotivoIngresso
+    module:               motivo_ingresso
+    prefix_path:          /motivo_ingresso
+    column:               id
+    with_wildcard_routes: true
+
+motivo_desligamento:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                MotivoDesligamento
+    module:               motivo_desligamento
+    prefix_path:          /motivo_desligamento
+    column:               id
+    with_wildcard_routes: true
+
+
+grau_parentesco_responsavel:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                GrauParentescoResponsavel
+    module:               grau_parentesco_responsavel
+    prefix_path:          /grau_parentesco_responsavel
+    column:               id
+    with_wildcard_routes: true
+
+escolaridade_acolhido:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                EscolaridadeAcolhido
+    module:               escolaridade_acolhido
+    prefix_path:          /escolaridade_acolhido
+    column:               acolhido_id/:escolaridade_id
+
+    with_wildcard_routes: true
+
+entidades_passadas_acolhido:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                EntidadesPassadasAcolhido
+    module:               entidades_passadas_acolhido
+    prefix_path:          /entidades_passadas_acolhido
+    column:               id
+    with_wildcard_routes: true
+
+curso_externo_acolhido:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                CursoExternoAcolhido
+    module:               curso_externo_acolhido
+    prefix_path:          /curso_externo_acolhido
+    column:               acolhido_id
+    with_wildcard_routes: true
+
+acolhido:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Acolhido
+    module:               acolhido
+    prefix_path:          /acolhido
+    column:               id
+    with_wildcard_routes: true
+
+
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: acolhido, action: index }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

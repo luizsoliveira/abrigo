@@ -1,0 +1,30 @@
+# data/fixtures/motivoIngresso.yml
+MotivoIngresso:
+    1:
+        nome: negligência
+    2:
+        nome: carência de recursos materiais da família ou responsável
+    3:
+        nome: abandono pelos pais ou responsáveis
+    4:
+        nome: violência doméstica (maus tratos físicos ou pisicológicos)
+    5:
+        nome: situação de rua
+    6:
+        nome: pais ou responsáveis dependentes químicos ou alcoolistas
+    7:
+        nome: abuso sexual / suspeita de abuso sexual
+    8:
+        nome: orfandade
+    9:
+        nome: risco de vida na comunidade
+    10:
+        nome: em razão de sua conduta
+    11:
+        nome: falta de creche ou escola em horário integral
+    12:
+        nome: uso abusivo de drogas ou álcool
+    13:
+        nome: não informado
+    14:
+        nome: outros

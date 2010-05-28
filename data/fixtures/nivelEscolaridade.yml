@@ -1,0 +1,51 @@
+# data/fixtures/nivelEscolaridade.yml
+NivelEscolaridade:
+    1:
+      nome: 1º Ano
+      grau: ENSINO FUNDAMENTAL
+    2:
+      nome: 2º Ano
+      grau: ENSINO FUNDAMENTAL
+    3:
+      nome: 3º Ano
+      grau: ENSINO FUNDAMENTAL
+    4:
+      nome: 4º Ano
+      grau: ENSINO FUNDAMENTAL
+    5:
+      nome: 5º Ano
+      grau: ENSINO FUNDAMENTAL
+    6:
+      nome: 6º Ano
+      grau: ENSINO FUNDAMENTAL
+    7:
+      nome: 7º Ano
+      grau: ENSINO FUNDAMENTAL
+    8:
+      nome: 8º Ano
+      grau: ENSINO FUNDAMENTAL
+    9:
+      nome: 9º Ano
+      grau: ENSINO FUNDAMENTAL
+    10:
+      nome: 1ª Série
+      grau: ENSINO MÉDIO
+    11:
+      nome: 2ª Série
+      grau: ENSINO MÉDIO
+    12:
+      nome: 3ª Série
+      grau: ENSINO MÉDIO
+    13:
+      nome: Graduaçãoa
+      grau: ENSINO SUPERIOR
+    14:
+      nome: Pós graduação
+      grau: ENSINO SUPERIOR
+    15:
+      nome: Mestrado
+      grau: ENSINO SUPERIOR
+    16:
+      nome: Doutorado
+      grau: ENSINO SUPERIOR
+
