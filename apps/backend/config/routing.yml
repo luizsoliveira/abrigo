@@ -29,8 +29,8 @@ entradas_e_saidas_acolhido:
   class: sfDoctrineRouteCollection
   options:
     model:                EntradasESaidasAcolhido
-    module:               entradas-e-saidas
-    prefix_path:          /entradas-e-saidas
+    module:               entradas_e_saidas
+    prefix_path:          /entradas_e_saidas
     column:               id
     with_wildcard_routes: true
 

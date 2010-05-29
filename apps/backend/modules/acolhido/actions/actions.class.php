@@ -14,10 +14,16 @@ require_once dirname(__FILE__).'/../lib/acolhidoGeneratorHelper.class.php';
 class acolhidoActions extends autoAcolhidoActions
 {
 
-    public function executeEscolaridades(sfWebrequest $request)
+    public function executeEscolaridade(sfWebrequest $request)
     {
-        $id = $request->getParameter('id');
-        //echo $id;
+        //$this->acolhido = Acolhido::find($request->getParameter('id'));
+        $this->acolhido = Doctrine::getTable('Acolhido')->findOneById($request->getParameter('id'));
+        //$this->acolhido->findById($request->getParameter('id'));
+        $entradasESaidas = new EntradasESaidasAcolhido();
+        $entradasESaidas->setAcolhido($this->acolhido);
+        //$entradasESaidas->save();
+        $this->form = new EntradasESaidasAcolhidoForm($entradasESaidas);
+        
     }
 
 

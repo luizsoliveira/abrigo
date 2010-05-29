@@ -23,10 +23,16 @@ alt="Jobeet Job Board" />
               <?php echo link_to('Acolhidos', 'acolhido') ?>
            </li>
            <li>
-              <?php echo link_to('Pais e Responsáveis', 'responsaveis') ?>
+              <?php echo link_to('Escolaridades', 'escolaridade_acolhido') ?>
            </li>
            <li>
               <?php echo link_to('Cursos externos', 'curso_externo_acolhido') ?>
+           </li>
+            <li>
+              <?php echo link_to('Entradas e saidas', 'entradas_e_saidas_acolhido') ?>
+           </li>
+            <li>
+              <?php echo link_to('Pais e Responsáveis', 'responsavel') ?>
            </li>
             <li>
               <?php echo link_to('Padrinhos', 'padrinho') ?>

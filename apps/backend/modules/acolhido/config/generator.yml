@@ -41,7 +41,7 @@ generator:
         object_actions:
           _edit: ~
           _delete: ~
-          viewEscolaridade: { label: Escolaridade, action: escolaridades }
+          escolaridade: { label: Escolaridade, action: escolaridade }
       filter: 
         display: [nome, sexo, motivoIngresso_id, possuiDeficiencia, usoMedicamentoControlado, motivoDesligamento_id, pai_id, mae_id, responsavel_id, dataNascimento, dataIngresso, dataDesligamento] 
       form:

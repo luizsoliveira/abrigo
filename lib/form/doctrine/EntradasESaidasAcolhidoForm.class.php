@@ -21,25 +21,27 @@ class EntradasESaidasAcolhidoForm extends BaseEntradasESaidasAcolhidoForm
 
     $acolhido = $this->getObject()->getAcolhido();
     if (!$acolhido->isNew()) {
-
+        //echo "sim";
         //Veirificando autorização para visita do Pai
         $pai = $acolhido->getPai();
         if ($pai->getAutorizacaoVisita() == "Sim") {
             $choicesPai[$pai->getId()] = $pai->getNome();
-        } else $choicesPai[""] = "Pai não autorizado a visitação";
+        } else $choicesPai[""] = "Pai não autorizado a visitação ou não cadastrado";
 
 
         //Veirificando autorização para visita da Mãe
         $mae = $acolhido->getMae();
         if ($mae->getAutorizacaoVisita() == "Sim") {
             $choicesMae[$mae->getId()] = $mae->getNome();
-        } else $choicesMae[""] = "Mãe não autorizada a visitação";
+        } else $choicesMae[""] = "Mãe não autorizada a visitação ou não cadastrada";
 
         //Veirificando autorização para visita do Responsável
         $responsavel = $acolhido->getResponsavel();
         if ($responsavel->getAutorizacaoVisita() == "Sim") {
             $choicesResponsavel[$responsavel->getId()] = $responsavel->getNome();
-        } else $choicesResponsavel[""] = "Responsável não autorizado a visitação";
+        } else $choicesResponsavel[""] = "Responsável não autorizado a visitação ou não cadastrado";
+
+    unset($acolhido);
     }
 
     $this->widgetSchema['pai_id'] = new sfWidgetFormChoice(array('choices' => $choicesPai));
