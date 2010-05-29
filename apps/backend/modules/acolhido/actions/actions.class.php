@@ -17,8 +17,7 @@ class acolhidoActions extends autoAcolhidoActions
     public function executeEscolaridades(sfWebrequest $request)
     {
         $id = $request->getParameter('id');
-        var_dump($request);
-        echo $id;
+        //echo $id;
     }
 
 
