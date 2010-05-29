@@ -13,15 +13,18 @@ class EntradasESaidasAcolhidoForm extends BaseEntradasESaidasAcolhidoForm
   public function configure()
   {
 
-
+    @$acolhido = $_GET['acolhido_id'];
+        
 
     $choicesPai[""] = "";
     $choicesMae[""] = "";
     $choicesResponsavel[""] = "";
 
-    $acolhido = $this->getObject()->getAcolhido();
-    if (!$acolhido->isNew()) {
-        //echo "sim";
+    if (($acolhido)) {
+        echo "sim";        
+        $acolhido = Doctrine::getTable('Acolhido')->findOneById($acolhido);
+        $this->setDefault('acolhido_id', $acolhido->getId());
+
         //Veirificando autorização para visita do Pai
         $pai = $acolhido->getPai();
         if ($pai->getAutorizacaoVisita() == "Sim") {

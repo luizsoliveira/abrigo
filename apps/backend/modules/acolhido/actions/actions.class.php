@@ -17,10 +17,10 @@ class acolhidoActions extends autoAcolhidoActions
     public function executeEscolaridade(sfWebrequest $request)
     {
         //$this->acolhido = Acolhido::find($request->getParameter('id'));
-        $this->acolhido = Doctrine::getTable('Acolhido')->findOneById($request->getParameter('id'));
+        //$this->acolhido = Doctrine::getTable('Acolhido')->findOneById($request->getParameter('id'));
         //$this->acolhido->findById($request->getParameter('id'));
         $entradasESaidas = new EntradasESaidasAcolhido();
-        $entradasESaidas->setAcolhido($this->acolhido);
+        $entradasESaidas->setAcolhidoId($request->getParameter('id'));
         //$entradasESaidas->save();
         $this->form = new EntradasESaidasAcolhidoForm($entradasESaidas);
         
