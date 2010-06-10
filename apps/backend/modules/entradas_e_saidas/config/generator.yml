@@ -23,7 +23,7 @@ generator:
         dataRetorno: {label: Data do retorno}
         observacoes: {label: Observações}
         acolhidoNome: {label: Acolhido}
-        situacao: {label: Situacao}
+        situacao: {label: Situação}
       list:
         title: Entradas e Saídas dos acolhidos
         display: [=acolhidoNome, dataSaida, dataPrevistaRetorno, dataRetorno]  
