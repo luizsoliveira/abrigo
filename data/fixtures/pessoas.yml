@@ -23,12 +23,14 @@ Voluntario:
     1:
       nome: Luiz Felipe Silva Oliveira
       endCidade: Três Rios
+      profissao: Analista de Sistemas
       endEstado: RJ
 
 Padrinho:
     1:
       nome: Jorge Macedo Ideal
       endCidade: Três Rios
+      profissao: Farmacêutico
       endEstado: RJ
 
 Acolhido:

@@ -16,7 +16,7 @@ generator:
       fields: 
         nomeEntidade: {label: Nome da entidade, attributes: { size:  50 }}
         dataEntrada: {label: Data de entrada}
-        dataSaida: {label: Data de saída,  date_format: dd/MM/yy}
+        dataSaida: {label: Data de saída,  date_format:<center> dd/MM/yy </center>}
         acolhidoNome: {label: Acolhido}
    
         

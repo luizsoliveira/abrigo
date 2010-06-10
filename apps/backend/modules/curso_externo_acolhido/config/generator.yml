@@ -16,7 +16,7 @@ generator:
       fields: 
         nomeEscola: {label: Nome da escola, attributes: { size:  50 }}
         nomeCurso: {label: Nome do curso, attributes: { size:  50 }}
-        dataConclusao: {label: Data de conclusão}
+        dataConclusao: {label: Data de conclusão, date_format:<center> dd/MM/yyyy </center>}
         descricao: {label: Descrição do curso, attributes: {rows: 10, cols: 50}}
         acolhidoNome: {label: Acolhido}
        
