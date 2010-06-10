@@ -37,7 +37,7 @@ Acolhido:
       sexo: Masculino
       dataNascimento: '1987-11-12 00:00:00'
       motivoIngresso_id: 1
-      pai_id: 1
+      pai_id: 2
       mae_id: 1
       responsavel_id: 1
 
@@ -47,14 +47,14 @@ Acolhido:
       dataNascimento: '1987-11-22 00:00:00'
       possuiDeficiencia: Sim
       motivoIngresso_id: 2
-      pai_id: 1
-      mae_id: 1
+      pai_id: 2
+      mae_id: 3
 
     3:
       nome: Isabela Miranda
       sexo: Feminino
       motivoIngresso_id: 2
-      pai_id: 1
+      pai_id: 2
       mae_id: 1
 
     4:
@@ -64,8 +64,8 @@ Acolhido:
       usoMedicamentoControlado: Sim
       motivoDesligamento_id: 2
       dataDesligamento: '2010-05-22'
-      pai_id: 1
-      mae_id: 1
+      pai_id: 2
+      mae_id: 3
 
 
 

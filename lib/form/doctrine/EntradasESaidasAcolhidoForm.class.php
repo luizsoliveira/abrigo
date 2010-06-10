@@ -20,7 +20,10 @@ class EntradasESaidasAcolhidoForm extends BaseEntradasESaidasAcolhidoForm
     $choicesMae[""] = "";
     $choicesResponsavel[""] = "";
 
-    if (($acolhido)) {
+
+
+    if (($acolhido) || (!$this->getObject()->isNew())) {
+        if (!$acolhido) $acolhido = $this->getObject()->getAcolhidoId();
         $acolhido = Doctrine::getTable('Acolhido')->findOneById($acolhido);
         $this->setDefault('acolhido_id', $acolhido->getId());
 
@@ -43,12 +46,15 @@ class EntradasESaidasAcolhidoForm extends BaseEntradasESaidasAcolhidoForm
             $choicesResponsavel[$responsavel->getId()] = $responsavel->getNome();
         } else $choicesResponsavel[""] = "Responsável não autorizado a visitação ou não cadastrado";
 
+
+        $this->widgetSchema['pai_id'] = new sfWidgetFormChoice(array('choices' => $choicesPai));
+        $this->widgetSchema['mae_id'] = new sfWidgetFormChoice(array('choices' => $choicesMae));
+        $this->widgetSchema['responsavel_id'] = new sfWidgetFormChoice(array('choices' => $choicesResponsavel));
+
     unset($acolhido);
     }
 
-    $this->widgetSchema['pai_id'] = new sfWidgetFormChoice(array('choices' => $choicesPai));
-    $this->widgetSchema['mae_id'] = new sfWidgetFormChoice(array('choices' => $choicesMae));
-    $this->widgetSchema['responsavel_id'] = new sfWidgetFormChoice(array('choices' => $choicesResponsavel));
+    
     
     
 
