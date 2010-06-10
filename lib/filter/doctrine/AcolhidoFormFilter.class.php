@@ -16,7 +16,23 @@ class AcolhidoFormFilter extends BaseAcolhidoFormFilter
     $this->widgetSchema['pai_id'] = new myPaiWidgetFormDoctrineChoice();
     $this->widgetSchema['mae_id'] = new myMaeWidgetFormDoctrineChoice();
 
+    $this->widgetSchema['situacao'] = new sfWidgetFormChoice(array('choices' => array('' => '', 'Ativo' => 'Ativo', 'Desligado' => 'Desligado')));
+    $this->validatorSchema['situacao'] =  new sfValidatorPass();
+
 
   }
+
+  public function addSituacaoColumnQuery($query,$field,$value)
+  {
+    if($value == "Ativo"){
+        $query->andWhere("dataDesligamento is null");
+    } else if($value == "Desligado") {
+        $query->andWhere("dataDesligamento is not null");
+    }
+    return $query;
+  }
+
+
+
 }
 ?>

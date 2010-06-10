@@ -19,10 +19,14 @@ class acolhidoActions extends autoAcolhidoActions
         //$this->acolhido = Acolhido::find($request->getParameter('id'));
         //$this->acolhido = Doctrine::getTable('Acolhido')->findOneById($request->getParameter('id'));
         //$this->acolhido->findById($request->getParameter('id'));
-        $entradasESaidas = new EntradasESaidasAcolhido();
-        $entradasESaidas->setAcolhidoId($request->getParameter('id'));
+        //$entradasESaidas = new EntradasESaidasAcolhido();
+        //$entradasESaidas->setAcolhidoId($request->getParameter('id'));
         //$entradasESaidas->save();
-        $this->form = new EntradasESaidasAcolhidoForm($entradasESaidas);
+        //$this->form = new EntradasESaidasAcolhidoForm();
+        //$this->form->setDefault('acolhido_id', $request->getParameter('id'));
+        //$this->getRequest()->setParameter('acolhido_id', $request->getParameter('id'));
+        //$this->forward('entradas_e_saidas', 'new');
+        $this->redirect('entradas_e_saidas/new?acolhido_id=' . $request->getParameter('id'));
         
     }
 

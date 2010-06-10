@@ -21,7 +21,6 @@ class EntradasESaidasAcolhidoForm extends BaseEntradasESaidasAcolhidoForm
     $choicesResponsavel[""] = "";
 
     if (($acolhido)) {
-        echo "sim";        
         $acolhido = Doctrine::getTable('Acolhido')->findOneById($acolhido);
         $this->setDefault('acolhido_id', $acolhido->getId());
 

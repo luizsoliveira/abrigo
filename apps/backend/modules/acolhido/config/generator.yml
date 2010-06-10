@@ -43,7 +43,7 @@ generator:
           _delete: ~
           escolaridade: { label: Escolaridade, action: escolaridade }
       filter: 
-        display: [nome, sexo, motivoIngresso_id, possuiDeficiencia, usoMedicamentoControlado, motivoDesligamento_id, pai_id, mae_id, responsavel_id, dataNascimento, dataIngresso, dataDesligamento] 
+        display: [nome, sexo, situacao, motivoIngresso_id, possuiDeficiencia, usoMedicamentoControlado, motivoDesligamento_id, pai_id, mae_id, responsavel_id, dataNascimento, dataIngresso, dataDesligamento] 
       form:
         display:   
            Geral: [nome, dataNascimento, sexo] 
