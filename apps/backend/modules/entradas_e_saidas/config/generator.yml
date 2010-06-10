@@ -13,8 +13,18 @@ generator:
 
     config:
       actions: ~
-      fields:  ~
-      list:    ~
+      fields:
+        mae_id: {label: Mãe}
+        responsavel_id: {label: Responsável}
+        voluntario_id: {label: Voluntário}
+        dataSaida: {label: Data de saída}
+        dataRetorno: {label: Data de retorno}
+        dataPrevistaRetorno: {label: Data prevista para o retorno}
+        dataRetorno: {label: Data do retorno}
+        observacoes: {label: Observações}
+      list:
+        title: Entradas e Saídas dos acolhidos
+        display: [=acolhido_id, dataSaida, dataPrevistaRetorno, dataRetorno]  
       filter:  ~
       form:    ~
       edit:    ~

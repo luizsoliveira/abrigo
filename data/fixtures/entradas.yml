@@ -1,0 +1,23 @@
+# data/fixtures/grauParentescoResponsavel.yml
+EntradasESaidasAcolhido:
+    1:
+        acolhido_id: 1
+        responsavel_id: 1
+        dataSaida: '2009-05-07 00:08:00'
+        dataPrevistaRetorno: '2009-05-10 00:17:00'
+    2:
+        acolhido_id: 2
+        responsavel_id: 2
+        dataSaida: '2009-05-07 00:08:00'
+        dataPrevistaRetorno: '2009-05-10 00:17:00'
+    3:
+        acolhido_id: 3
+        responsavel_id: 1
+        dataSaida: '2009-05-07 00:08:00'
+        dataPrevistaRetorno: '2009-05-10 00:17:00'
+    4:
+        acolhido_id: 4
+        responsavel_id: 2
+        dataSaida: '2009-05-07 00:08:00'
+        dataPrevistaRetorno: '2009-05-10 00:17:00'
+

@@ -32,6 +32,9 @@ alt="Jobeet Job Board" />
               <?php echo link_to('Entradas e saidas', 'entradas_e_saidas_acolhido') ?>
            </li>
             <li>
+              <?php echo link_to('Entidades passadas', 'entidades_passadas_acolhido') ?>
+           </li>
+            <li>
               <?php echo link_to('Pais e Responsáveis', 'responsavel') ?>
            </li>
             <li>

@@ -1,0 +1,23 @@
+# data/fixtures/grauParentescoResponsavel.yml
+EntidadesPassadasAcolhido:
+    1:
+        acolhido_id: 1
+        nomeEntidade: Abrigo Fulano de tal
+        dataEntrada: '2009-05-07 00:08:00'
+        dataSaida: '2009-05-10 00:17:00'
+    2:
+        acolhido_id: 2
+        nomeEntidade: Abrigo Ciclano de tal
+        dataEntrada: '2009-05-07 00:08:00'
+        dataSaida: '2009-05-10 00:17:00'
+    3:
+        acolhido_id: 3
+        nomeEntidade: Orfanato Fulano de tal
+        dataEntrada: '2009-05-07 00:08:00'
+        dataSaida: '2009-05-10 00:17:00'
+    4:
+        acolhido_id: 4
+        nomeEntidade: Orfanato Ciclano de tal
+        dataEntrada: '2009-05-07 00:08:00'
+        dataSaida: '2009-05-10 00:17:00'
+
