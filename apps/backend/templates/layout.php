@@ -49,7 +49,7 @@ alt="Jobeet Job Board" />
         <?php echo $sf_content ?>
       </div>
       <div id="footer">
-        produzido por <a href="luizfelipe.com.br" target=_blank>Luiz Oliveira</a> com o framework<a href="http://www.symfony-project.org/" target=_blank> symfony</a>
+        produzido por <a href="http://luizfelipe.com.br" target=_blank>Luiz Oliveira</a> com o framework<a href="http://www.symfony-project.org/" target=_blank> symfony</a>
         </a>
       </div>
     </div>
