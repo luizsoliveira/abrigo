@@ -25,8 +25,9 @@ class acolhidoActions extends autoAcolhidoActions
         //$this->form = new EntradasESaidasAcolhidoForm();
         //$this->form->setDefault('acolhido_id', $request->getParameter('id'));
         //$this->getRequest()->setParameter('acolhido_id', $request->getParameter('id'));
-        //$this->forward('entradas_e_saidas', 'new');
-        $this->redirect('entradas_e_saidas/new?acolhido_id=' . $request->getParameter('id'));
+        //$this->forward('entradas_e_saidas', "new?acolhido_id={$request->getParameter('id')}");
+        $this->redirect("entradas_e_saidas/new?acolhido_id={$request->getParameter('id')}");
+        
         
     }
 
