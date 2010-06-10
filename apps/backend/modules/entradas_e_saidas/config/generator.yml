@@ -17,16 +17,14 @@ generator:
         mae_id: {label: Mãe}
         responsavel_id: {label: Responsável}
         voluntario_id: {label: Voluntário}
-        dataSaida: {label: Data de saída}
-        dataRetorno: {label: Data de retorno}
-        dataPrevistaRetorno: {label: Data prevista para o retorno}
-        dataRetorno: {label: Data do retorno}
+        dataSaida: {label: Saída, date_format:<center> dd/MM/yyyy <br> hh:mm:ss </center>}
+        dataPrevistaRetorno: {label: Previsão retorno, date_format:<center> dd/MM/yyyy <br> hh:mm:ss </center>}
+        dataRetorno: {label: Retorno, date_format:<center> dd/MM/yyyy <br> hh:mm:ss </center>}
         observacoes: {label: Observações}
-        acolhidoNome: {label: Acolhido}
         situacao: {label: Situação}
       list:
         title: Entradas e Saídas dos acolhidos
-        display: [=acolhidoNome, dataSaida, dataPrevistaRetorno, dataRetorno]  
+        display: [=acolhido, dataSaida, dataPrevistaRetorno, dataRetorno]  
       filter:
         display: [acolhido_id, situacao, mae_id, pai_id, responsavel_id, voluntario_id, padrinho_id, dataSaida, dataPrevistaRetorno, dataRetorno, observacoes]
       form:    ~
