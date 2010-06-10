@@ -23,10 +23,12 @@ generator:
         dataRetorno: {label: Data do retorno}
         observacoes: {label: Observações}
         acolhidoNome: {label: Acolhido}
+        situacao: {label: Situacao}
       list:
         title: Entradas e Saídas dos acolhidos
         display: [=acolhidoNome, dataSaida, dataPrevistaRetorno, dataRetorno]  
-      filter:  ~
+      filter:
+        display: [acolhido_id, situacao, mae_id, pai_id, responsavel_id, voluntario_id, padrinho_id, dataSaida, dataPrevistaRetorno, dataRetorno, observacoes]
       form:    ~
       edit:    ~
       new:     ~

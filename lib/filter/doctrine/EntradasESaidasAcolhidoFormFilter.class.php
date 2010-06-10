@@ -16,5 +16,19 @@ class EntradasESaidasAcolhidoFormFilter extends BaseEntradasESaidasAcolhidoFormF
     $this->widgetSchema['pai_id'] = new myPaiWidgetFormDoctrineChoice();
     $this->widgetSchema['mae_id'] = new myMaeWidgetFormDoctrineChoice();
 
+    $this->widgetSchema['situacao'] = new sfWidgetFormChoice(array('choices' => array('' => '', 'Aberto' => 'Em aberto', 'Fechado' => 'Fechado')));
+    $this->validatorSchema['situacao'] =  new sfValidatorPass();
+
   }
+
+  public function addSituacaoColumnQuery($query,$field,$value)
+  {
+    if($value == "Aberto"){
+        $query->andWhere("dataRetorno is null");
+    } else if($value == "Fechado") {
+        $query->andWhere("dataRetorno is not null");
+    }
+    return $query;
+  }
+
 }
