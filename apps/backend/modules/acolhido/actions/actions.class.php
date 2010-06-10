@@ -14,7 +14,7 @@ require_once dirname(__FILE__).'/../lib/acolhidoGeneratorHelper.class.php';
 class acolhidoActions extends autoAcolhidoActions
 {
 
-    public function executeEscolaridade(sfWebrequest $request)
+    public function executeEntradasESaidas(sfWebrequest $request)
     {
         //$this->acolhido = Acolhido::find($request->getParameter('id'));
         //$this->acolhido = Doctrine::getTable('Acolhido')->findOneById($request->getParameter('id'));

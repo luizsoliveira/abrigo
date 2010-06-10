@@ -12,4 +12,11 @@
  */
 class EntradasESaidasAcolhido extends BaseEntradasESaidasAcolhido
 {
+
+    function getAcolhidoNome() {
+
+        return $this->getAcolhido()->getNome();
+
+    }
+
 }

@@ -22,9 +22,10 @@ generator:
         dataPrevistaRetorno: {label: Data prevista para o retorno}
         dataRetorno: {label: Data do retorno}
         observacoes: {label: Observações}
+        acolhidoNome: {label: Acolhido}
       list:
         title: Entradas e Saídas dos acolhidos
-        display: [=acolhido_id, dataSaida, dataPrevistaRetorno, dataRetorno]  
+        display: [=acolhidoNome, dataSaida, dataPrevistaRetorno, dataRetorno]  
       filter:  ~
       form:    ~
       edit:    ~

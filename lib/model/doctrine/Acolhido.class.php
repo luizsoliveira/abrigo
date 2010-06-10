@@ -30,5 +30,11 @@ class Acolhido extends BaseAcolhido
 
     }
 
+    public function __toString() {
+
+        return $this->getNome();
+
+    }
+
 
 }
