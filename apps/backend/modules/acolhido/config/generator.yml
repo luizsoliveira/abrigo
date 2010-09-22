@@ -2,7 +2,7 @@ generator:
   class: sfDoctrineGenerator
   param:
     model_class:           Acolhido
-    theme:                 admin
+    theme:                 admin #jroller 
     non_verbose_templates: true
     with_show:             true
     singular:              ~
@@ -12,7 +12,9 @@ generator:
     actions_base_class:    sfActions
 
     config:
-      actions: ~
+      actions:
+        _new: { ui-icon: plus }
+        _edit: { ui-icon: pencil }
       fields: 
         nome: {attributes: { size:  50 }}
         dataNascimento: {label: Data de nascimento}

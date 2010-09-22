@@ -24,7 +24,6 @@ class Acolhido extends BaseAcolhido
     public function getPaiAutorizado() {
 
         $pai = $this->getPai();
-        var_dump($pai);
         if ($pai->getAutorizacaoVisita() == "Sim") return $pai;
         else return null;
 
@@ -36,5 +35,17 @@ class Acolhido extends BaseAcolhido
 
     }
 
+    /* 
+     * Informa se o acolhido está dentro ou fora do abrigo de acordo com os registros de entrada e saída.
+    */
+
+    public function isFora() {
+
+        $entradas = $this->getEntradasESaidasAcolhido();
+        foreach($entradas as $entrada) {
+            if ($entrada->getDataRetorno() == null) return true;
+        }
+        return false;
+    }
 
 }

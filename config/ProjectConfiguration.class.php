@@ -9,5 +9,7 @@ class ProjectConfiguration extends sfProjectConfiguration
   {
     $this->enablePlugins('sfDoctrinePlugin');
     $this->enablePlugins('ahDoctrineEasyEmbeddedRelationsPlugin');
+    //$this->enablePlugins('sfAdminThemejRollerPlugin');
+    $this->enablePlugins('sfDoctrineGuardPlugin');
   }
 }

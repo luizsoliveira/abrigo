@@ -17,34 +17,54 @@ alt="Jobeet Job Board" />
            </a>
          </h1>
       </div>
-      <div id="menu">
-         <ul>
-           <li>
-              <?php echo link_to('Acolhidos', 'acolhido') ?>
-           </li>
-           <li>
-              <?php echo link_to('Escolaridades', 'escolaridade_acolhido') ?>
-           </li>
-           <li>
-              <?php echo link_to('Cursos externos', 'curso_externo_acolhido') ?>
-           </li>
-            <li>
-              <?php echo link_to('Entradas e saidas', 'entradas_e_saidas_acolhido') ?>
-           </li>
-            <li>
-              <?php echo link_to('Entidades passadas', 'entidades_passadas_acolhido') ?>
-           </li>
-            <li>
-              <?php echo link_to('Pais e Responsáveis', 'responsavel') ?>
-           </li>
-            <li>
-              <?php echo link_to('Padrinhos', 'padrinho') ?>
-           </li>
-            <li>
-              <?php echo link_to('Voluntários', 'voluntario') ?>
-           </li>
-        </ul>
-      </div>
+      
+
+<?php if ($sf_user->isAuthenticated()): ?>
+  <div id="menu">
+    <ul>
+       <li>
+          <?php echo link_to('Acolhidos', 'acolhido') ?>
+       </li>
+       <li>
+          <?php echo link_to('Escolaridades', 'escolaridade_acolhido') ?>
+       </li>
+       <li>
+          <?php echo link_to('Cursos externos', 'curso_externo_acolhido') ?>
+       </li>
+        <li>
+          <?php echo link_to('Entradas e saidas', 'entradas_e_saidas_acolhido') ?>
+       </li>
+        <li>
+          <?php echo link_to('Entidades passadas', 'entidades_passadas_acolhido') ?>
+       </li>
+        <li>
+          <?php echo link_to('Pais e Responsáveis', 'responsavel') ?>
+       </li>
+        <li>
+          <?php echo link_to('Padrinhos', 'padrinho') ?>
+       </li>
+        <li>
+          <?php echo link_to('Voluntários', 'voluntario') ?>
+       </li>
+
+        <?php if ($sf_user->hasCredential("admin")): ?>
+
+        <li><?php echo link_to('Usuários', 'sf_guard_user') ?></li>
+        <li><?php echo link_to('Grupos', 'sf_guard_group') ?></li>
+        <li><?php echo link_to('Permissões', 'sf_guard_permission') ?></li>
+
+        <?php endif ?>
+
+        <li><?php echo link_to('Sair', 'sf_guard_signout') ?></li>
+
+    </ul>
+  </div>
+<?php endif ?>
+
+
+            
+
+
       <div id="content">
         <?php echo $sf_content ?>
       </div>

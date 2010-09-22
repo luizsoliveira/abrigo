@@ -12,7 +12,8 @@ generator:
     actions_base_class:    sfActions
 
     config:
-      actions: ~
+      actions: 
+
       fields:
         mae_id: {label: Mãe}
         responsavel_id: {label: Responsável}

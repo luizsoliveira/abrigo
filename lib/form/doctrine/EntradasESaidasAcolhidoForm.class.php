@@ -25,6 +25,9 @@ class EntradasESaidasAcolhidoForm extends BaseEntradasESaidasAcolhidoForm
     if (($acolhido) || (!$this->getObject()->isNew())) {
         if (!$acolhido) $acolhido = $this->getObject()->getAcolhidoId();
         $acolhido = Doctrine::getTable('Acolhido')->findOneById($acolhido);
+
+    
+
         $this->setDefault('acolhido_id', $acolhido->getId());
 
         //Veirificando autorização para visita do Pai
@@ -51,7 +54,9 @@ class EntradasESaidasAcolhidoForm extends BaseEntradasESaidasAcolhidoForm
         $this->widgetSchema['mae_id'] = new sfWidgetFormChoice(array('choices' => $choicesMae));
         $this->widgetSchema['responsavel_id'] = new sfWidgetFormChoice(array('choices' => $choicesResponsavel));
 
-    unset($acolhido);
+        
+    
+        unset($acolhido);
     }
 
     
