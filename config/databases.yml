@@ -2,6 +2,6 @@ all:
   doctrine:
     class: sfDoctrineDatabase
     param:
-      dsn: 'mysql:host=localhost;dbname=abrigo'
-      username: root
-      password: null
+      dsn: 'mysql:host=localhost;dbname=luizfeli_abrigo'
+      username: luizfeli_abrigo
+      password: abrigo

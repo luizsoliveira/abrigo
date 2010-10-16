@@ -3,3 +3,39 @@
 
 # default values
 #all:
+
+all:
+  sf_admin_dash:
+    web_dir:                      /sfAdminDashPlugin
+    image_dir:                    /sfAdminDashPlugin/images/icons/
+    default_image:                config.png
+    resize_mode:                  thumbnail
+    site:                         @brigo
+    include_path:                 true
+    include_jquery_no_conflict:   false
+    logout:                       true
+    login_route:                  @sf_guard_signin
+    logout_route:                 @sf_guard_signout
+    categories:
+      Acolhidos:
+        items:
+          Listar:
+            url:          acolhido/index
+            image:        users.png
+            credentials:  [[admin, publisher]]
+          Incluir:
+            url:          acolhido/new
+            image:        users.png
+            credentials:  [[admin, publisher]]
+      Responsáveis:
+        items:
+          Listar:
+            url:          responsavel/index
+            image:        language.png
+            credentials:  [admin]
+          Incluir:
+            url:          responsavel/new
+            image:        language.png
+            credentials:  [admin]
+
+

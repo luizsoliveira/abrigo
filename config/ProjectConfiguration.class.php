@@ -11,5 +11,8 @@ class ProjectConfiguration extends sfProjectConfiguration
     $this->enablePlugins('ahDoctrineEasyEmbeddedRelationsPlugin');
     //$this->enablePlugins('sfAdminThemejRollerPlugin');
     $this->enablePlugins('sfDoctrineGuardPlugin');
+    $this->enablePlugins('laiguAdminThemePlugin');
+    $this->enablePlugins('sfJqueryReloadedPlugin');
+    $this->enablePlugins('sfAdminDashPlugin');
   }
 }

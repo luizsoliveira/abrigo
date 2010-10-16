@@ -159,9 +159,16 @@ sf_guard_password:
 
 
 # default rules
+#homepage:
+#  url:   /
+#  param: { module: acolhido, action: index }
+
+
 homepage:
   url:   /
-  param: { module: acolhido, action: index }
+  param: { module: sfAdminDash, action: dashboard }
+
+
 
 # generic rules
 # please, remove them by adding more specific rules

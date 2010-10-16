@@ -7,72 +7,9 @@
     <?php include_javascripts() ?>
     <?php include_stylesheets() ?>
   </head>
-  <body>
-    <div id="container">
-      <div id="header">
-         <h1>
-           <a href="<?php echo url_for('homepage') ?>">
-              <img src="logo.png"
-alt="Jobeet Job Board" />
-           </a>
-         </h1>
-      </div>
-      
-
-<?php if ($sf_user->isAuthenticated()): ?>
-  <div id="menu">
-    <ul>
-       <li>
-          <?php echo link_to('Acolhidos', 'acolhido') ?>
-       </li>
-       <li>
-          <?php echo link_to('Escolaridades', 'escolaridade_acolhido') ?>
-       </li>
-       <li>
-          <?php echo link_to('Cursos externos', 'curso_externo_acolhido') ?>
-       </li>
-        <li>
-          <?php echo link_to('Entradas e saidas', 'entradas_e_saidas_acolhido') ?>
-       </li>
-        <li>
-          <?php echo link_to('Entidades passadas', 'entidades_passadas_acolhido') ?>
-       </li>
-        <li>
-          <?php echo link_to('Pais e Responsáveis', 'responsavel') ?>
-       </li>
-        <li>
-          <?php echo link_to('Padrinhos', 'padrinho') ?>
-       </li>
-        <li>
-          <?php echo link_to('Voluntários', 'voluntario') ?>
-       </li>
-
-        <?php if ($sf_user->hasCredential("admin")): ?>
-
-        <li><?php echo link_to('Usuários', 'sf_guard_user') ?></li>
-        <li><?php echo link_to('Grupos', 'sf_guard_group') ?></li>
-        <li><?php echo link_to('Permissões', 'sf_guard_permission') ?></li>
-
-        <?php endif ?>
-
-        <li><?php echo link_to('Sair', 'sf_guard_signout') ?></li>
-
-    </ul>
-  </div>
-<?php endif ?>
-
-
-            
-
-
-      <div id="content">
-        <?php echo $sf_content ?>
-      </div>
-      <div id="footer">
-        produzido por <a href="http://luizfelipe.com.br" target=_blank>Luiz Oliveira</a> com o framework<a href="http://www.symfony-project.org/" target=_blank> symfony</a>
-        </a>
-      </div>
-    </div>
-  </body>
-</html>
+<body>
+  <?php include_component('sfAdminDash','header'); ?>
+  <?php echo  $sf_content ?>
+  <?php include_partial('sfAdminDash/footer'); ?>
+</body>
 
