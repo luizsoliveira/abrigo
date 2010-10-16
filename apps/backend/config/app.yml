@@ -27,6 +27,26 @@ all:
             url:          acolhido/new
             image:        users.png
             credentials:  [[admin, publisher]]
+          Escolaridade:
+            url:          escolaridade_acolhido/index
+            image:        users.png
+            credentials:  [[admin, publisher]]
+          Cursos Externos:
+            url:          curso_externo_acolhido/index
+            image:        users.png
+            credentials:  [[admin, publisher]]
+          Apadrinhamento:
+            url:          apadrinhamento/index
+            image:        users.png
+            credentials:  [[admin, publisher]]
+          Entradas e Saidas:
+            url:          entradas_e_saidas/index
+            image:        users.png
+            credentials:  [[admin, publisher]]
+          Entidades Passadas:
+            url:          entidades_passadas_acolhido/index
+            image:        users.png
+            credentials:  [[admin, publisher]]
       Responsáveis:
         items:
           Listar:
@@ -35,6 +55,26 @@ all:
             credentials:  [admin]
           Incluir:
             url:          responsavel/new
+            image:        language.png
+            credentials:  [admin]
+      Padrinhos:
+        items:
+          Listar:
+            url:          padrinho/index
+            image:        language.png
+            credentials:  [admin]
+          Incluir:
+            url:          padrinho/new
+            image:        language.png
+            credentials:  [admin]
+      Voluntarios:
+        items:
+          Listar:
+            url:          voluntario/index
+            image:        language.png
+            credentials:  [admin]
+          Incluir:
+            url:          voluntario/new
             image:        language.png
             credentials:  [admin]
 
