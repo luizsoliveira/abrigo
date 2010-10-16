@@ -1,0 +1,13 @@
+/* 
+    Document   : laiguAdminTheme.css
+    Created on : 08/02/2010, 09:21:19
+    Author     : Jordi Llonch
+*/
+
+/* 
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+th, td {
+  padding:0.2em;
+}
